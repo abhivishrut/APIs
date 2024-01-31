@@ -1,0 +1,37 @@
+{
+    "java": [
+        {
+            "id": "1",
+            "title": "satish",
+            "subData": [
+                {
+                    "id": "1",
+                    "des": "In this example, a Handler is used to delay the transition for 2 seconds (2000 milliseconds).Adjust the delay as needed. The Intent is then created to start the MainActivity, and the startActivity method is called to initiate the transition. Finally, the finish method is used to close the SplashScreen activity after starting the MainActivity.",
+                    "img": "https://c4.wallpaperflare.com/wallpaper/399/410/576/anarchy-anonymous-dark-finger-wallpaper-preview.jpg"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "abhivishrut",
+            "subData": [
+                {
+                    "id": "2",
+                    "des": "In this example, a Handler is used to delay the transition for 2 seconds (2000 milliseconds).Adjust the delay as needed. The Intent is then created to start the MainActivity, and the startActivity method is called to initiate the transition. Finally, the finish method is used to close the SplashScreen activity after starting the MainActivity.",
+                    "img": "https://c4.wallpaperflare.com/wallpaper/399/410/576/anarchy-anonymous-dark-finger-wallpaper-preview.jpg"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "nitin",
+            "subData": [
+                {
+                    "id": "3",
+                    "des": "In this example, a Handler is used to delay the transition for 2 seconds (2000 milliseconds).Adjust the delay as needed. The Intent is then created to start the MainActivity, and the startActivity method is called to initiate the transition. Finally, the finish method is used to close the SplashScreen activity after starting the MainActivity.",
+                    "img": "https://c4.wallpaperflare.com/wallpaper/399/410/576/anarchy-anonymous-dark-finger-wallpaper-preview.jpg"
+                }
+            ]
+        }
+    ]
+}
