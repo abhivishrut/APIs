@@ -6,8 +6,8 @@
     },
     {
         "id": 2,
-        "name": "Abhivishrut Vishnoi",
-        "message": "Hello! This is Abhivishrut Bishnoi. I am a Founder & ECO, Codewati"
+        "name": "How To Install C",
+        "message": "C को install करना बेहद आसान है इसके लिए हमे सबसे पहले एक Compiler को download करना होगा market में बहुत सारे compilers available है हमे इसमें से कोई एक download करना है हम यहाँ Turbo C++ को install करने की सलाह देंगे क्योंकि यह बहुत पुराना और popular है। और यह C और C++ दोनो को support करता है। Turbo C++ को install करने के लिए दिए गए instructions को follow करें।\n\n1. किसी भी website से Turbo C++ को download करें।\n\n2.अब आपको C drive के अंदर एक नई directory Turboc बनाने की जरूरत है और अब tc3.zip file को c:\turboc directory में extract कर दें। \n\n3.अब, c:\turboc के अंदर install का icon दिखेगा जिसपे आप क्लिक करें। \n\n4. यहाँ आपको c install करने के लिए कहेगा install करने के लिए enter बटन दबाएं।\n\n5. अब अपनी drive को c में बदलने के लिए c दबाएं।\n\n6. फिर एक window दिखेगी यहाँ enter दबाएं, यह जरूरी files के लिए c:\turboc directory के अंदर दिखेगा।\n\n7. down Arrow के द्वारा Start Installation चुनें और फिर enter दबाएं।\n\n8. अब turbo C++ install हो गया है, Readme file को पढ़ने या Software को बंद करने के लिए enter दबाएं।\n\n9. अब c program लिखने के लिए c:\\TC\\BIN directory में tc icon पर double click करें।\n\nयह application win 7 और win 8 में एक ignore या Close का dialog box दिखायेगा क्योंकि यह इन windows में Full screen support नही करता है तो आप ignore button पे click करें। उसके बाद आपको main writing console screen दिखेगी जहाँ आप अपने program लिख सकते हैं।"
     },
     {
         "id": 3,
