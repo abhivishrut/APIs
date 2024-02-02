@@ -10,23 +10,98 @@
         "message": "C को install करना बेहद आसान है इसके लिए हमे सबसे पहले एक Compiler को download करना होगा market में बहुत सारे compilers available है हमे इसमें से कोई एक download करना है हम यहाँ Turbo C++ को install करने की सलाह देंगे क्योंकि यह बहुत पुराना और popular है। और यह C और C++ दोनो को support करता है। Turbo C++ को install करने के लिए दिए गए instructions को follow करें।\n\n1. किसी भी website से Turbo C++ को download करें।\n\n2.अब आपको C drive के अंदर एक नई directory Turboc बनाने की जरूरत है और अब tc3.zip file को c:\turboc directory में extract कर दें। \n\n3.अब, c:\turboc के अंदर install का icon दिखेगा जिसपे आप क्लिक करें। \n\n4. यहाँ आपको c install करने के लिए कहेगा install करने के लिए enter बटन दबाएं।\n\n5. अब अपनी drive को c में बदलने के लिए c दबाएं।\n\n6. फिर एक window दिखेगी यहाँ enter दबाएं, यह जरूरी files के लिए c:\turboc directory के अंदर दिखेगा।\n\n7. down Arrow के द्वारा Start Installation चुनें और फिर enter दबाएं।\n\n8. अब turbo C++ install हो गया है, Readme file को पढ़ने या Software को बंद करने के लिए enter दबाएं।\n\n9. अब c program लिखने के लिए c:\\TC\\BIN directory में tc icon पर double click करें।\n\nयह application win 7 और win 8 में एक ignore या Close का dialog box दिखायेगा क्योंकि यह इन windows में Full screen support नही करता है तो आप ignore button पे click करें। उसके बाद आपको main writing console screen दिखेगी जहाँ आप अपने program लिख सकते हैं।"
     },
     {
-        "id": 3,
-        "name": "Abhivishrut Vishnoi",
-        "message": "Hello! This is Abhivishrut Bishnoi. I am a Founder & ECO, Codewati"
+        "id":"3",
+        "name":"Syntax in C programming",
+        "message":"आप जानते है की C language कितनी खास है क्यों C को mother language कहा जाता है क्यूंकि c language के Syntax को दूसरी language के Syntax follow करते हैं और हम C language के syntax अच्छी तरह से समझ ले तो हमे दूसरी languages को सीखना बहुत आसान हो जाएगा।\n\nSyntax program लिखने का set of rules होता है जिसको follow करते हुए हैं हम C language में program को लिखते हैं। जिस प्रकार हमारे दैनिक जीवन में नियम कानून होते है उसी प्रकार program को लिखने के लिए एक नियम व कानून होता है जिसे हम syntax कहते हैं।\n\nकिसी programming language को सीखने के लिए सबसे पहले उस language के syntax को सीखना सबसे आवश्यक होता है syntax किसी language का सबसे basic concept होता है। आगे इसे हम एक program लिख के विस्तार में समझेंगे।\n\nC Example:\n\n#include<stdio.h>\n\nint main()\n{\n    printf(\"Hello World !\");\n    return 0;\n}\n\nOutPut:\nHello World !\n\nExplain Example:\n\n1. #include <stdio.h> एक header files है जो हमें input और output functions के साथ work करने देती है।\n2. C language में किसी भी program के लिए main() function entry point होता है , इस function में हम अपना logic लिखते हैं। C language में हमें function लिखते समय return type भी define करना पड़ता है जैसा कि example में दिखाया गया है।\n3. printf() function studio.h header files में define किया गया function है जिसका use screen पर output print करने के लिए किया गया है।\n\nRemember:\n\nहमे program लिखते समय कुछ जरूरी बातों का खास ध्यान रखना होगा जो कुछ इस प्रकार हैं-\n1. C एक case sensitive language है इसलिए हमे इसके syntax को हमेशा lower case में लिखना होता है।\n2. C में सभी statement को semicolon (;) से ख़त्म करना चाहिए , जैसा कि आप ऊपर दिए गए example में देख सकते हैं।\n3. C में blank space और tab को दर्शाने के लिए whitespace का use किया जाता है।"
     },
     {
         "id": 4,
-        "name": "Abhivishrut Vishnoi",
-        "message": "Hello! This is Abhivishrut Bishnoi. I am a Founder & ECO, Codewati"
+        "name": "Variables",
+        "message": "variable किसी memory को दिया गया नाम है जो कि किसी value को Hold करती है या store करती है। मतलब जब हम Variable define कर रहें है तो हम memory में value को store करके उसे नाम दे रहे होते हैं। इसलिए variables को named storage भी कहते हैं।\n\nC define a variable:-\nC language में variables को उसके data type के साथ define किया जाता है , जिससे पता चल सके कि define किया जाने वाला variable किस type की value hold करेगा। जैसा कि ऊपर दी गयी image में देख पा रहे हैं।\nएक variable का name letters, numbers and underscore Character से बना हो सकता है। variables का name या तो एक letter या underscore से start होना चाहिए।\n\nC Variable types and their description\nC में different types के variables होते है, example के लिए:\n\n1. int : integers store करता है (whole numbers), decimals के बिना, जैसे 123 या -123\n2. double : floating-point numbers store करता है, decimals के साथ, जैसे कि 19.99 or -19.99\n3. char : single characters store करता है, जैसे 'A' or 'B'। Char values singlr quotes से घिरे होते हैं।\n4. string : text store करता है, जैसे 'Hello World'। String values double-quotes से घिरे हैं।\n5. bool : दो states के साथ value को store करता है: true or false.\n\nDeclare Multiple Variables\nहालाँकि आप चाहे तो same type के variables को एक single statement / line में भी define कर सकते हैं।\nint a = 15, b = 36, c = 20;\n\nC Variable Names\nC language में variable define करते समय कुछ बातें आपको ध्यान में रखनी हैं -\n\n1. variable name में सिर्फ letters, digits और underscores हो कोई भी special characters (@, # , $ etc.) नहीं होने चाहिए है।\n2. variable नाम किसी letter और underscore (_) से ही start होना चाहिए।\n3. C language में variables name case sensitive हैं मतलब age , Age & aGe तीन अलग - अलग variables हैं।\n4. variable का नाम C language में defined किसी भी keywords (like : int , function , include etc.) से match नहीं होना चाहिए।"
     },
     {
         "id": 5,
-        "name": "Abhivishrut Vishnoi",
-        "message": "Hello! This is Abhivishrut Bishnoi. I am a Founder & ECO, Codewati"
+        "name": "Constant Variables",
+        "message": "पिछले topic में आपने Variables के बारे में पढ़ा समझा , इस topic में आप constant variables के बारे में पढ़ेंगे।\n\nC में Constants, Identifier होते हैं जिन्हे हम variables की तरह ही define करते हैं , हालाँकि normal variables की तरह इनकी value Immutable होती , means हम program execution के समय इनकी value को change नहीं कर सकते हैं। जैसे normal variable को Define करके हम Runtime पर भी increment / decrement या new value assign करके change करते थे।\n\nC const:-\nconst एक predefined keyword है जिसका use करके , हम constant variables को define करते हैं।\nwell , आप बाकी normal variables की तरह ही हर data type के constant variable define कर सकते हैं।\nI Hope, अब आपको C++ में constant variables के बारे में अच्छे से समझ आ गया होगा।"
     },
     {
         "id": 6,
-        "name": "Abhivishrut Vishnoi",
-        "message": "Hello! This is Abhivishrut Bishnoi. I am a Founder & ECO, Codewati"
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 7,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 8,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 9,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 10,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 11,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 12,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 13,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 14,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 15,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 16,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 17,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 18,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 19,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 20,
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": 21,
+        "name": "",
+        "message": ""
     }
 ]
