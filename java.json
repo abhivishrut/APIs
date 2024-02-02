@@ -31,8 +31,8 @@
     },
     {
         "id": 7,
-        "name": "",
-        "message": ""
+        "name": "C Data Types",
+        "message": "Programming में Data Type बहुत ही important concept है। क्योंकि Data Type के according ही हम variable define करते हैं और उनके लिए logic implement करते हैं।\n\nपिछले topic में आपने Variables के बारे में पढ़ा और समझा, आपको याद होगा कि कोई भी variable define करने से पहले हमें उसका type define करते थे जिससे पता लगाया जा सके कि वो variable किस type की value hold करेगा। इस topic में आप उन्ही सब types के बारे में पढ़ेंगे।\n\nData Type का simply मतलब है किसी variable का type, जिससे हमें पता चल सके कि कोई variable किस type की value hold किये हुए है, या in future किस type की value hold करेगा।\n\nC Basic Data Types\n\nC language में Generally use होने वाले data types इस प्रकार हैं-\nType\t\tKeyword\t\tSize\t\tDescription\nInteger\t\tint\t\t2 or 4 bytes\t\tयह बिना decimal points वाले whole numbers (पूर्ण संख्या) को store करता है।\nCharacter\tchar\t\t1 byte\t\t\tयह single character store करता है।\nFloating point\tfloat\t\t4 bytes\t\t\tयह fractional numbers को point के बाद 7 digits तक store करता है।\nDouble floating point\tdouble\t\t8 bytes\t\t\tयह भी fractional numbers को point के बाद 15 digits तक store करता है।\n\nC Basic Format Specifiers\n\nइन basic types के variables को handle करने के लिए कुछ basic format specifiers भी हैं -\n\nData Type\tFormat Specifier\nint\t\t%d or %i\nchar\t%c\nfloat\t%f\ndouble\t%lf\n\nC Data Type Example\n\n#include <stdio.h>\n\nint main() {\n  int int_var = 90;\n  float float_var = 15.99;\n  double double_var = 15.99;\n  char char_var = 'R';\n\n  printf(\"int variable : %d\", int_var);\n  printf(\"\\nfloat variable : %d\", float_var);\n  printf(\"\\ndouble variable : %f\", double_var);\n  printf(\"\\nchar variable : %c\", char_var);\n\n  return 0;\n}\n\nOutput:\n\nint variable: 90\nfloat variable: 1519845401\ndouble variable: 15.990000\nchar variable: R"
     },
     {
         "id": 8,
