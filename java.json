@@ -23,7 +23,7 @@
     {
         "id": "04",
         "name": "Comments",
-        "message": "Java mein, hum code ke liye comments bhi likh sakte hain. Comments code ko user ke liye explain karte hain aur code ko neat aur clean banate hain.\n\nHum Java mein, do types ke comments likh sakte hain:\n\n1. Single line comments:\n\nSingle line comments ek line mein comments ka kaam karte hain. Iske liye, hum // ka use karte hain.\n\n2. Multi-line comments:\n\nMulti-line comments mein, hum bahut saare lines comments kar sakte hain. Iske liye, hum /* aur */ ka use karte hain.",
+        "message": "🟥 Java mein, hum code ke liye comments bhi likh sakte hain. Comments code ko user ke liye explain karte hain aur code ko neat aur clean banate hain.\n\n🟥 Hum Java mein, do types ke comments likh sakte hain:\n\n📌 1. Single line comments:\nSingle line comments ek line mein comments ka kaam karte hain. Iske liye, hum // ka use karte hain.\n\n📌 2. Multi-line comments:\nMulti-line comments mein, hum bahut saare lines comments kar sakte hain. Iske liye, hum /* aur */ ka use karte hain.",
         "example": "public class HelloWorld {\n    // This is a single line comment\n    public static void main(String[] args) {\n        /*\n         * This is a\n         * multi-line comment\n         */\n        System.out.println(\"Hello, World!\");\n    }\n}",
         "remcont": "0"
     },
