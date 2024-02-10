@@ -3,14 +3,14 @@
         "id": "1",
         "name": "Introduction",
         "message": "🟥 Java ek general-purpose computer programming language hai. Iska developer Sun Microsystems tha, jinhein 2010 mein Oracle Corporation ne acquire kiya tha. Is language ko 1995 mein launch kiya gaya tha.\n\n🟥 Java ek object-oriented programming language hai, jismein hum objects aur classes ka use karte hain. Ismein, humein ek codebase ko har platform par chalane ke liye compile karne ki zaroorat nahi hai. Isliye, Java ko \"write once, run anywhere\" approach ke naam se jaana jata hai.\n\n🟥 Ismein, humein Java Virtual Machine (JVM) ke through program execute karna padta hai. JVM har platform par chalta hai, isliye Java ke code ko har jagah chalane ke liye compile karne ki zaroorat nahi hai.",
-        "example":"",
+        "example":"null",
         "remcont":"🟥 Java ke paar, humein web-based applications, mobile applications, desktop applications, enterprise applications, etc. banaane ke liye use kar sakte hain. Ismein, humein exception handling bhi kar sakte hain, jisse aap program ke dair-dair errors ko handle kar sakte hain.\n\n🟥 Iske alawa, Java ek robust aur secure language hai, isliye iska use financial, healthcare, education, etc. industries mein bahut mahatvapurn hai. Ismein bahut se libraries aur frameworks bhi available hain, jisse hum aapke requirements ke anuroop applications bana sakte hain.\n\n🟥 Java ke paar pichhle saalon mein bahut se updates aur version aaye hain, jaise ki Java 9, Java 10, Java 11, etc. Iske saath, bahut se new features aur improvements bhi aaye hain. Isliye, agar aap Java sikhna chahte hain, to aap iske naye versions ko bhi sikhna chahiye.\n\n"
     },
     {
         "id": "2",
         "name": "Installation",
         "message": "🟥 Java ko install karne ke liye, aap Java Development Kit (JDK) ko apne computer par install karna chaahate hain. JDK ko Oracle website se download kar sakte hain.",
-        "example":"",
+        "example":"null",
         "remcont":"📌 1. Oracle website pe jaakar, \"Download JDK\" ko click karo.\n\n📌 2. Apne computer ki operating system ke anuroop JDK ko download karo.\n\n📌 3. JDK installer ko chalo aur installation process ko follow karo.\n\n📌 4. Installation process mein, aapko ek screen milega jismein aapko \"Install\" button dikhaai dega. Is button ko click karo aur installation process shuru ho jaayegi.\n\n📌 5. Installation process ke baad, aapka computer mein Java install ho jaayega.\n\n📌 6. Installation ke baad, aapke system ke PATH variable ko update karna chaahiye hai. PATH variable ko update karne ke liye, aapko system settings ke settings mein jaana hoga.\n\n📌 7. Settings mein, \"Environment Variables\" ko click karo aur \"Path\" ko select karo.\n\n📌 8. \"Path\" ko edit karne ke liye, \"Edit\" button ko click karo aur ek neeche wala empty field mein, aapko Java bin directory ko paste karna hoga. Java bin directory ko paste karne ke baad, \"OK\" button ko click karo.\n\n📌 9. Isse, aapka computer ready hoga Java ke applications ko run karne ke liye.\n\n"
     },
     {
