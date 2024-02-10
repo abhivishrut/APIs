@@ -17,7 +17,7 @@
         "id": "03",
         "name": "Java Syntax",
         "message": "🟥 Ek Java program shuru ho jaata hai ek class ke saath.\nclass ke andar, hum apne program ka main method define karte hain, jismein humein program ka entry point bataya jata hai.",
-        "example": "class HelloJava {\n    public static void main(String[] args) {\n        System.out.println(\"Hey You, Welcome to Codewati Tech Pvt. Ltd.\");\n    }\n}",
+        "example": "class HelloJava {\n    public static void main(String[] args) {\n        System.out.println(\"Hey, Welcome to Codewati\");\n    }\n}",
         "remcont": "🟥 Iska matlab yeh hai ki hum Java mein, objects aur functions ka use karte hain. \"System\" ek object hai jise hum use karte hain Java runtime ke liye. \"out\" ek variable hai jiska matlab yeh hai ki output stream. Aur \"println\" ek function hai jismein hum string ko print karwate hain aur ek endline character bhi add karte hain.\n\n"
     },
     {
