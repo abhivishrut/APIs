@@ -135,86 +135,86 @@
     {
         "id": "20",
         "name": "Array",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Java mein array ek fixed-size collection hai jisme same type ke elements save kiye ja sakte hain. Yeh ek single variable hai jisme array ka size aur elements ke values define kiye jate hain. Array ke elements ka access karne ke liye indexing system ka use kiya jata hai jisme pehla element ka index '0' hota hai. Agar hum ek array banane ke liye koi specific size nahi define karenge to hum default me '0' size ka array banane ke liye hum 'new' keyword ka use kar sakte hain.\n\nArray ke saath hum kuch important operations kar sakte hain jaise:\n\n📌~1. Declaration: 'datatype[] arrayName;'\n\n📌~2. Initialization: 'arrayName = new datatype[arraySize];'\n\n📌~3. Accessing elements: 'arrayName[index];'\n\n📌~4. Modifying elements: 'arrayName[index] = value;'\n\n📌~5. Finding length: 'arrayName.length;'\n\n🟥 ~Note: Agar hum ek array ke pehle element ko access karne ke liye index -1 ka use karte hain to hum ArrayIndexOutOfBoundsException prapt karte hain.\n",
+        "example": "class ArrayExample {\n    public static void main(String[] args) {\n        int[] numbers = new int[5];\n        numbers[0] = 10;\n        numbers[1] = 20;\n        numbers[2] = 30;\n        numbers[3] = 40;\n        numbers[4] = 50;\n        System.out.println(\"Length of the array is: \" + numbers.length);\n        System.out.println(\"The first element is: \" + numbers[0]);\n        System.out.println(\"The second element is: \" + numbers[1]);\n        System.out.println(\"The third element is: \" + numbers[2]);\n        System.out.println(\"The fourth element is: \" + numbers[3]);\n        System.out.println(\"The fifth element is: \" + numbers[4]);\n    }\n}",
+        "remcont": "🟥 Is example me hum 'numbers' array ke 5 elements banaye hain aur hum unhe '10', '20', '30', '40', aur '50' se initialize kiye hain. Agar hum 'numbers.length' ka use karte hain to hum '5' prapt karte hain. Agar hum 'numbers[0]' ka use karte hain to hum '10' prapt karte hain aur agar hum 'numbers[4]' ka use karte hain to hum '50' prapt karte hain.\n\n🟥 Array ek very useful tool hai jisme hum data ko fixed-size me store kar sakte hai aur usme access aur manipulate kar sakte hai. Isse hum data ko ek condition ke anuroop handle kar sakte hai aur hum program ko ek condition ke anuroop modify kar sakte hai.\n\n"
     },
     {
         "id": "21",
         "name": "Array Traversing",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Array traversing ek process hai jisme hum ek array ke elements ko iterate karte hai aur har element ko access karte hai. Iske liye hum array ke elements ko for loop ya while loop ke saath iterate kar sakte hai.\n",
+        "example": "class ArrayTraversingExample {\n    public static void main(String[] args) {\n        int[] numbers = new int[5];\n        numbers[0] = 10;\n        numbers[1] = 20;\n        numbers[2] = 30;\n        numbers[3] = 40;\n        numbers[4] = 50;\n        System.out.println(\"Array Traversing:\");\n        for (int i = 0; i < numbers.length; i++) {\n            System.out.println(\"The element at index \" + i + \" is: \" + numbers[i]);\n        }\n    }\n}",
+        "remcont": "🟥 Is example me hum numbers array ke 5 elements banaye hai aur hum unhe '10', '20', '30', '40', aur '50' se initialize kiye hain. Agar hum 'numbers.length' ka use karte hain to hum 5 prapt karte hain. Agar hum 'numbers[i]' ka use karte hain to hum 'i' ke saath array ke elements ko iterate karte hain aur har iteration me hum ek element ko print karte hain.\n\n🟥 ~Note: Array traversing ek very useful tool hai jisme hum data ko fixed-size me store kar sakte hai aur usme access aur manipulate kar sakte hai. Isse hum data ko ek condition ke anuroop handle kar sakte hai aur hum program ko ek condition ke anuroop modify kar sakte hai.\n\n"
     },
     {
         "id": "22",
         "name": "Multidimensional Array",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Multidimensional array ek array ke andar ek aur array hota hai jisme hum multiple dimensions me data store kar sakte hain. Iske liye hum arrayName[][] ya arrayName[rows][columns] ka use kar sakte hain. Isse hum multiple rows aur columns me elements store kar sakte hain.\n",
+        "example": "class MultidimensionalArrayExample {\n    public static void main(String[] args) {\n        int[][] numbers = new int[3][3];\n        numbers[0][0] = 1;\n        numbers[0][1] = 2;\n        numbers[0][2] = 3;\n        numbers[1][0] = 4;\n        numbers[1][1] = 5;\n        numbers[1][2] = 6;\n        numbers[2][0] = 7;\n        numbers[2][1] = 8;\n        numbers[2][2] = 9;\n        System.out.println(\"Multidimensional Array:\");\n        for (int i = 0; i < numbers.length; i++) {\n            for (int j = 0; j < numbers[i].length; j++) {\n                System.out.print(numbers[i][j] + \" \");\n            }\n            System.out.println();\n        }\n    }\n}",
+        "remcont": "🟥 Is example me hum numbers multidimensional array ke 3 rows aur 3 columns banaye hai aur hum unhe '1', '2', '3', '4', '5', '6', '7', '8', aur '9' se initialize kiye hain. Agar hum 'numbers.length' ka use karte hain to hum '3' prapt karte hain aur agar hum 'numbers[i].length' ka use karte hain to hum '3' prapt karte hain. Agar hum 'numbers[i][j]' ka use karte hain to hum 'i' aur 'j' ke saath array ke elements ko iterate karte hain aur har iteration me hum ek element ko print karte hain.\n\n🟥~Note: Hum for loop ya while loop ke saath multidimensional array ko traverse kar sakte hain. Isse hum data ko ek condition ke anuroop handle kar sakte hai aur hum program ko ek condition ke anuroop modify kar sakte hain.\n\n"
     },
     {
         "id": "23",
         "name": "OOPs Concepts",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Java mein OOPs concepts, object-oriented programming ke concepts ka ek part hai. Yeh 4 concepts ke through chalte hain: Inheritance, Encapsulation, Abstraction, and Polymorphism.\n\n📌~1. Inheritance: Inheritance ek process hai jisme hum ek class ke properties aur functions ko doosre class me inherit kar sakte hain. Isse hum code ko reuse kar sakte hain aur hum ek class ke properties aur functions ko doosre class me anaavashyakata se chhipa sakte hain.\n\n📌~2. Encapsulation: Encapsulation ek process hai jisme hum data aur functions ko ek object me bind karte hain aur hum data ko private rakhte hain aur functions ko public rakhte hain. Isse hum data ko bahar se access nahi kar sakte aur hum data ko safe rakhte hain.\n\n📌~3. Abstraction: Abstraction ek process hai jisme hum data aur functions ko abstract hone ke liye use kar sakte hain. Isse hum data aur functions ko bahar se access nahi kar sakte aur hum data ko safe rakhte hain.\n\n📌~4. Polymorphism: Polymorphism ek process hai jisme hum ek class ke multiple forms me functions define kar sakte hain. Isse hum ek class ke functions ko doosre class me override kar sakte hain aur hum ek class ke functions ko multiple ways me use kar sakte hain.\n",
+        "example": "0",
+        "remcont": "🟥~Note: OOPs concepts ek very important part hai Java programming mein aur yeh hume code ko organize aur maintain karne me madad karti hai.\n\n"
     },
     {
         "id": "24",
         "name": "Class And Object",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Java mein classes aur objects ek important part hai. Classes objects ke blueprint hain aur objects class se bana hote hain.\n\n📌~1. Class: Class ek blueprint hai jisme hum object ke properties aur functions ko define karte hain. Classes objects ke blueprint hain aur hum objects ke properties aur functions ko define kar sakte hain.\n\n📌~2. Object: Object class se bana hua class instance hai. Objects properties aur functions ko store karte hain.\n",
+        "example": "class Animal {\n    void eat() {\n        System.out.println(\"Eating...\");\n    }\n}\n\nclass Dog extends Animal {\n    void bark() {\n        System.out.println(\"Barking...\");\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Dog dog = new Dog();\n        dog.eat(); // here 'eat()' is an object\n        dog.bark(); // here 'bark()' is an object\n    }\n}",
+        "remcont": "0"
     },
     {
         "id": "25",
         "name": "Static Members",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 In Java, static members ek class ke liye common hote hai. Isse hum ek class ke sabhi objects ke liye same values ko access kar sakte hain. Static members ke do types hoti hain: Variables aur Methods.\n\n📌~1. Static Variables: Static variables ek class ke liye common hote hai. Isse hum ek class ke sabhi objects ke liye same values ko access kar sakte hain. Static variables ke liye memory sirf ek baar allocate hoti hai aur unhe class name ke saath directly access kar sakte hain.\n\n📌~2. Static Methods: Static methods ek class ke liye common hote hain. Isse hum ek class ke sabhi objects ke liye same values ko access kar sakte hain. Static methods ke liye memory sirf ek baar allocate hoti hai aur unhe class name ke saath directly access kar sakte hain.\n\n~Note: Static members ko class ke liye common hone ke liye define kiya jata hai, isliye hum unhe class ke objects ke through nahi access kar sakte.\n",
+        "example": "// Static Variables\n\nclass Counter {\n    static int count = 0;\n\n    Counter() {\n        count++;\n    }\n\n    static void display() {\n        System.out.println(\"Count: \" + count);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Counter c1 = new Counter();\n        Counter c2 = new Counter();\n        Counter.display(); // Output: Count: 2\n    }\n}// Static Methods\n\nclass MathUtils {\n    static int add(int a, int b) {\n        return a + b;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Sum: \" + MathUtils.add(5, 10)); // Output: Sum: 15\n    }\n}",
+        "remcont": "0"
     },
     {
         "id": "26",
         "name": "Non-Static Members",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 In Java, non-static members ek object ke liye hote hai. Isse hum ek object ke liye unique values ko access aur set kar sakte hain. Non-static members ke do types hoti hain: Variables aur Methods.\n\n📌~1. Non-Static Variables: Non-static variables ek object ke liye hote hai. Isse hum ek object ke liye unique values ko access aur set kar sakte hain. Non-static variables ke liye memory allocate hoti hai har object ke liye.\n\n📌~2. Non-Static Methods: Non-static methods ek object ke liye hote hai. Isse hum ek object ke liye unique values ko access aur set kar sakte hain. Non-static methods ke liye memory allocate hoti hai har object ke liye.\n\n~Note: Non-static members ek object ke liye unique hone ke liye define kiye jate hai, isliye hum unhe class ke objects ke through access kar sakte hai.\n",
+        "example": "// Non-Static Variables\nclass Student {\n    String name;\n    int rollNumber;\n\n    Student(String name, int rollNumber) {\n        this.name = name;\n        this.rollNumber = rollNumber;\n    }\n\n    void display() {\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Roll Number: \" + rollNumber);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Student s1 = new Student(\"John Doe\", 1);\n        Student s2 = new Student(\"Jane Doe\", 2);\n\n        s1.display(); // Output: Name: John Doe, Roll Number: 1\n        s2.display(); // Output: Name: Jane Doe, Roll Number: 2\n    }\n}\n\n// Non-Static Methods\nclass Rectangle {\n    int length;\n    int breadth;\n\n    Rectangle(int length, int breadth) {\n        this.length = length;\n        this.breadth = breadth;\n    }\n\n    int area() {\n        return length * breadth;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Rectangle r1 = new Rectangle(5, 10);\n        Rectangle r2 = new Rectangle(10, 20);\n\n        System.out.println(\"Area of rectangle r1: \" + r1.area()); // Output: Area of rectangle r1: 50\n        System.out.println(\"Area of rectangle r2: \" + r2.area()); // Output: Area of rectangle r2: 200\n    }\n}",
+        "remcont": "0"
     },
     {
         "id": "27",
         "name": "Constructor",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 In Java, constructor ek special type ke methods hai jo ek object banane ke liye use hoti hai. Isse hum ek object banane ke samay, ek object ke liye memory allocate kar sakte hai aur ek object ke liye properties set kar sakte hai.\n\nConstructor ke do types hote hain: Default aur Parameterized.\n\n📌~1. Default Constructor: Default constructor ek constructor hai jisme koi parameter nahi hai. Iske liye compiler automatically ek default constructor generate karta hai. Default constructor ek class ke liye default values set karne ke liye use hoti hai.\n\n📌~2. Parameterized Constructor: Parameterized constructor ek constructor hai jisme parameter dete hai. Isse hum ek object banane ke samay, ek object ke liye memory allocate kar sakte hai aur ek object ke liye properties set kar sakte hai.\n\n~Note: Constructor ka name same class ka naam hi hota hain.\n\n",
+        "example": "// Default Constructor\nclass Student {\n    String name;\n    int rollNumber;\n\n    Student() {\n        name = \"John Doe\";\n        rollNumber = 1;\n    }\n\n    void display() {\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Roll Number: \" + rollNumber);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Student s1 = new Student();\n        s1.display(); // Output: Name: John Doe, Roll Number: 1\n    }\n}\n\n// Parameterized Constructor\n(String[] args) {\n        Student s1 = new Student(\"John Doe\", 1);\n        Student s2 = new Student(\"Jane Doe\", 2);\n\n        s1.display(); // Output: Name: John Doe, Roll Number: 1\n        s2.display(); // Output: Name: Jane Doe, Roll Number: 2\n    }\n}",
+        "remcont": "0"
     },
     {
         "id": "28",
         "name": "Access Modifiers",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Access modifiers in Java are keywords used to define the visibility of class members (variables, methods, and inner classes). These modifiers are public, private, and protected.\n\n📌~1. Public: Public access modifier means that the variable or method can be accessed from anywhere.\n\n📌~2. Private: Private access modifier means that the variable or method can only be accessed within the same class.\n\n📌~3. Protected: Protected access modifier means that the variable or method can be accessed within the same package or within a subclass of the class in which the protected variable or method is declared.\n\n~Note: If no access modifier is specified, the default access modifier is package-private.\n\n",
+        "example": "// 1. Public Access Modifier\nclass Student {\n    public String name;\n    public int rollNumber;\n\n    public Student(String name, int rollNumber) {\n        this.name = name;\n        this.rollNumber = rollNumber;\n    }\n\n    public void display() {\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Roll Number: \" + rollNumber);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Student s1 = new Student(\"John Doe\", 1);\n        Student s2 = new Student(\"Jane Doe\", 2);\n\n        s1.display(); // Output: Name: John Doe, Roll Number: 1\n        s2.display(); // Output: Name: Jane Doe, Roll Number: 2\n    }\n}\n\n\n\n// 2. Private Access Modifier\nclass Student {\n    private String name;\n    private int rollNumber;\n\n    public Student(String name, int rollNumber) {\n        this.name = name;\n        this.rollNumber = rollNumber;\n    }\n\n    public void display() {\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Roll Number: \" + rollNumber);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Student s1 = new Student(\"John Doe\", 1);\n        Student s2 = new Student(\"Jane Doe\", 2);\n\n        s1.display(); // Output: Name: John Doe, Roll Number: 1\n        s2.display(); // Output: Name: Jane Doe, Roll Number: 2\n    }\n}\n\n\n\n// 3. Protected Access Modifier\nclass Student {\n    protected String name;\n    protected int rollNumber;\n\n    public Student(String name, int rollNumber) {\n        this.name = name;\n        this.rollNumber = rollNumber;\n    }\n\n    public void display() {\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Roll Number: \" + rollNumber);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Student s1 = new Student(\"John Doe\", 1);\n        Student s2 = new Student(\"Jane Doe\", 2);\n\n        s1.display(); // Output: Name: John Doe, Roll Number: 1\n        s2.display(); // Output: Name: Jane Doe, Roll Number: 2\n    }\n}\n\n\n\n// 4. Default Access Modifier (Package-Private)\nclass Student {\n    String name;\n    int rollNumber;\n\n    Student(String name, int rollNumber) {\n        this.name = name;\n        this.rollNumber = rollNumber;\n    }\n\n    void display() {\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Roll Number: \" + rollNumber);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Student s1 = new Student(\"John Doe\", 1);\n        Student s2 = new Student(\"Jane Doe\", 2);\n\n        s1.display(); // Output: Name: John Doe, Roll Number: 1\n        s2.display(); // Output: Name: Jane Doe, Roll Number: 2\n    }\n}",
+        "remcont": "0"
     },
     {
         "id": "29",
         "name": "Encapsulation",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Encapsulation (ENCAPSULATION) ek very important concept hai Java mein, jisme data (variables) aur functions (methods) ek sath pack up kiya jaata hai within a single unit, which is called a class. Isse data ko bahar se access nahi karne dete, sirf methods se access ki ja sakti hai. Isse data ko safe rakhne ke liye use kiya jaata hai, jisse data tampering nahi ho sakta.\n\n🟥 Encapsulation ko Java mein achieve karna mushkil nahi hai, bina kuch bhi special karne se bhi ho jata hai. Abhi main aapko ek basic example dikhata hoon:\n",
+        "example": "public class Person {\n    private String name; // private variable\n\n    public String getName() { // public method to get the value of name\n        return name;\n    }\n\n    public void setName(String name) { // public method to set the value of name\n        this.name = name;\n    }\n}",
+        "remcont": "🟥 Is example mein, \"name\" variable private hai, isliye bahar se direct access nahi kiya ja sakta. Lekin, hum \"getName()\" aur \"setName()\" do methods banaaye hain, jisme \"getName()\" method se hum \"name\" variable ka value access kar sakte hain, aur \"setName()\" method se hum \"name\" variable ka value set kar sakte hain.\n\n🟥 Encapsulation ka use aise areas mein bahut mahatvapurn hai jisme data bahut important hai, jaise bank account details, personal details, etc.\n\n"
     },
     {
         "id": "30",
         "name": "Packages",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Java mein packages ek tarah ke folder hai jisme related classes organize kiye ja sakte hain. Yeh code base ko bada banane se manage karne mein help karti hai by providing a namespace for classes.\n\n🟥 Java mein packages define kiye jate hain \"package\" keyword ka use karke, source file ke start mein.\n\n🟥 Jaise ki, agar aapne ek package \"com.codewati.pro-lang\" naam ke banaya hai, toh aap us package mein related classes daal sakte hain. Isse aap apne classes ko ek group mein rakh sakte hain, aur unhe aur programmer bhi dusre packages se alag kar sakte hain.\n\n🟥 Packages ke saath, Java compiler automatically manages access control and prevents naming conflicts. Isliye, packages aise areas mein bahut useful hai jisme code base bada hota hai, jaise software companies, etc.\n\n",
+        "example": "0",
+        "remcont": "0"
     },
     {
         "id": "31",
         "name": "Inheritance",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Inheritance (INHERITANCE) in Java ek very important feature hai, jisme child class parent class ke properties aur methods inherit karta hai. Isse code reusability aur logical code organization ka fayda uthaya ja sakta hai.\n\n🟥 Inheritance mein, parent class ko superclass aur child class ko subclass kehte hain. Superclass ke properties aur methods automatically available hote hain subclass mein, isse subclass ko unhe override karne ya extend karne mein time nahi lagega.\n",
+        "example": "class Animal {\n    String name;\n\n    void eat() {\n        System.out.println(\"Eating...\");\n    }\n}\n\nclass Dog extends Animal {\n    void bark() {\n        System.out.println(\"Barking...\");\n    }\n}",
+        "remcont": "🟥 Is example mein, \"Animal\" class parent class hai aur \"Dog\" class child class hai. \"Dog\" class automatically \"name\" variable aur \"eat()\" method inherit karta hai \"Animal\" class se.\n\n🟥 Inheritance ke saath, Java compiler automatically upar ki tarah manage karta hai method overriding aur variable hiding. Isliye, inheritance aise areas mein bahut useful hai jisme hierarchical relationship hota hai, jaise software development, etc.\n\n"
     },
     {
         "id": "32",
