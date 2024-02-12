@@ -3,14 +3,14 @@
         "id": "01",
         "name": "Introduction",
         "message": "🟥 Java ek general-purpose computer programming language hai. Iska developer Sun Microsystems tha, jinhein 2010 mein Oracle Corporation ne acquire kiya tha. Is language ko 1995 mein launch kiya gaya tha.\n\n🟥 Java ek object-oriented programming language hai, jismein hum objects aur classes ka use karte hain. Ismein, humein ek codebase ko har platform par chalane ke liye compile karne ki zaroorat nahi hai. Isliye, Java ko \"write once, run anywhere\" approach ke naam se jaana jata hai.\n\n🟥 Ismein, humein Java Virtual Machine (JVM) ke through program execute karna padta hai. JVM har platform par chalta hai, isliye Java ke code ko har jagah chalane ke liye compile karne ki zaroorat nahi hai.",
-        "example":"1",
+        "example":"0",
         "remcont":"🟥 Java ke paar, humein web-based applications, mobile applications, desktop applications, enterprise applications, etc. banaane ke liye use kar sakte hain. Ismein, humein exception handling bhi kar sakte hain, jisse aap program ke dair-dair errors ko handle kar sakte hain.\n\n🟥 Iske alawa, Java ek robust aur secure language hai, isliye iska use financial, healthcare, education, etc. industries mein bahut mahatvapurn hai. Ismein bahut se libraries aur frameworks bhi available hain, jisse hum aapke requirements ke anuroop applications bana sakte hain.\n\n🟥 Java ke paar pichhle saalon mein bahut se updates aur version aaye hain, jaise ki Java 9, Java 10, Java 11, etc. Iske saath, bahut se new features aur improvements bhi aaye hain. Isliye, agar aap Java sikhna chahte hain, to aap iske naye versions ko bhi sikhna chahiye.\n\n"
     },
     {
         "id": "02",
         "name": "Installation",
         "message": "🟥 Java ko install karne ke liye, aap Java Development Kit (JDK) ko apne computer par install karna chaahate hain. JDK ko Oracle website se download kar sakte hain.",
-        "example":"1",
+        "example":"0",
         "remcont":"📌 1. Oracle website pe jaakar, \"Download JDK\" ko click karo.\n\n📌 2. Apne computer ki operating system ke anuroop JDK ko download karo.\n\n📌 3. JDK installer ko chalo aur installation process ko follow karo.\n\n📌 4. Installation process mein, aapko ek screen milega jismein aapko \"Install\" button dikhaai dega. Is button ko click karo aur installation process shuru ho jaayegi.\n\n📌 5. Installation process ke baad, aapka computer mein Java install ho jaayega.\n\n📌 6. Installation ke baad, aapke system ke PATH variable ko update karna chaahiye hai. PATH variable ko update karne ke liye, aapko system settings ke settings mein jaana hoga.\n\n📌 7. Settings mein, \"Environment Variables\" ko click karo aur \"Path\" ko select karo.\n\n📌 8. \"Path\" ko edit karne ke liye, \"Edit\" button ko click karo aur ek neeche wala empty field mein, aapko Java bin directory ko paste karna hoga. Java bin directory ko paste karne ke baad, \"OK\" button ko click karo.\n\n📌 9. Isse, aapka computer ready hoga Java ke applications ko run karne ke liye.\n\n"
     },
     {
@@ -58,16 +58,16 @@
     {
         "id": "09",
         "name": "Type Casting",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Java mein Type Casting, ek critical concept hai jise data type ko doosre data type me convert karna allowed karta hai. Iske kaam aata hai jab hum doosre data types ke operations perform karna chahte hai ya agar aap ek value ko doosre data type ke variable me store karna chahte hai.\n\nHum do types ke Type Casting ka concept dekhenge:\n\n📌~1. Widening Type Casting: Isme, Java automaticaly ek data type ko doosre data type me convert karta hai. Jab hum ek chhota size wala data type ko, bara size wala data type me assign karenge toh is Type Casting ka use hota hai. Yeh automatically hota hai, isliye iska koi specific keyword use nahi kiya jata.\n\n📌~2. Narrowing Type Casting: Isme, hum manual cast karte hai ek data type ko doosre data type me. Jab hum ek bara size wala data type ko, chhota size wala data type me assign karenge toh is Type Casting ka use hota hai. Isme, hum (int) keyword ka use karte hai jise hum batate hai ki hum num variable ko int type me convert karna chahte hai.\n",
+        "example": "// Widening Type Casting\npublic class WideningTypeCasting {\n    public static void main(String[] args) {\n        int num = 10;\n        System.out.println(\"The integer value: \" + num);\n\n        double data = num;\n        System.out.println(\"The double value: \" + data);\n    }\n}\n\n// Narrowing Type Casting\npublic class NarrowingTypeCasting {\n    public static void main(String[] args) {\n        double num = 10.99;\n        System.out.println(\"The double value: \" + num);\n\n        int data = (int)num;\n        System.out.println(\"The integer value: \" + data);\n    }\n}",
+        "remcont": "🟥~Note: Narrowing Type Casting me data loss ho sakta hai, isliye hum ise explicit karne ke liye khud parenthesis me daalte hai. Humne sirf 2 types ke Type Casting ka concept diya, lekin Java mein doosre bhi types ke Type Conversion hota hai jaise string to int, int to string, etc."
     },
     {
         "id": "10",
         "name": "String",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🟥 Java mein String, ek built-in data type hai jisme hum text ko store aur manipulate kar sakte hai. String ek object hai jisme hum text ko store karte hai.\n\n📌~1. String ek immutable object hai: String ek immutable object hai, isliye hum text ko change nahi kar sakte. Jab hum text ko change karne ke liye koshish karte hai to ek nayi String object banana padta hai.\n\n📌~2. String ek sequence hai: String ek sequence hai jisme hum characters ko store kar sakte hai. Isliye hum string ko index ka use karke access kar sakte hai.\n\n📌~3. String ek object hai: String ek object hai jisme hum text ko store karte hai. Isliye hum String class ke methods ka use kar sakte hai.\n",
+        "example": "// immutable object\npublic class ImmutableObjectExample {\n    public static void main(String[] args) {\n        String data = \"Hello, World!\";\n        data = data.replace(\"World\", \"Java\");\n        System.out.println(\"The modified string is: \" + data);\n    }\n}\n\n// sequence\npublic class SequenceExample {\n    public static void main(String[] args) {\n        String data = \"Hello, World!\";\n        System.out.println(\"The first character of the string is: \" + data.charAt(0));\n        System.out.println(\"The last character of the string is: \" + data.charAt(data.length() - 1));\n    }\n}\n\n// object\npublic class ObjectExample {\n    public static void main(String[] args) {\n        String data = \"Hello, World!\";\n        System.out.println(\"The length of the string is: \" + data.length());\n        System.out.println(\"The lower case of the string is: \" + data.toLowerCase());\n        System.out.println(\"The upper case of the string is: \" + data.toUpperCase());\n    }\n}",
+        "remcont": "📌~In Immutable Example: Is example me humne replace() method ka use kiya hai jisme kya \"World\" ko \"Java\" me replace kar sakte hai. Lekin yeh hume ek nayi String object bana sakta hai jo hum \"Hello, Java!\" ke roop me store kar sakte hai.\n\n📌~In Squence Example: Is example me humne charAt() method ka use kiya hai jisme hum characters ko index ke roop me access kar sakte hai.\n\n📌~In Object Example: Is example me humne length(), toLowerCase() aur toUpperCase() method ka use kiya hai jisme hum string ke length ko access kar sakte hai aur usko Hinglish me ya capital letters me change kar sakte hai.\n\n🟥~Note: String ek built-in class hai jo Java ke standard library me hai. Isliye hum String class ke methods ko direct use kar sakte hai.\n\n"
     },
     {
         "id": "11",
