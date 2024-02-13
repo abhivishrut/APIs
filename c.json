@@ -37,148 +37,148 @@
         {
             "id": 6,
             "name": "C Input Output",
-            "message":"🔴 In C programming, input aur output functions ke through data input aur output karne ka tarika bataya gaya hai. Yahan kuchh mahatvapurn input aur output functions diye gaye hain:\n\n📌~'scanf': scanf function ka use karke, user input ko program mein store kar sakte hain.\n\n📌~'printf': printf function ka use karke, program se data print kar sakte hain.",
+            "message":"🔴 In C programming, input aur output functions ke through data input aur output karne ka tarika bataya gaya hai.\n\n📌~'scanf': scanf function ka use karke, user input ko program mein store kar sakte hain.\n\n📌~'printf': printf function ka use karke, program se data print kar sakte hain.",
         "example":"#include <stdio.h>\n\nint main() {\n    int a;\n\n    printf(\"Enter a value: \");\n    scanf(\"%d\", &a);\n\n    printf(\"Value of a is: %d\\n\", a);\n\n    return 0;\n}",
         "remcont":"0"
         },
         {
             "id": 7,
             "name": "C Data Types",
-            "message":"🔴 Data Types in C programming mein, variables ke liye memory allocation ke liye use hoti hain. Yahan kuchh mahatvapurn C programming mein use hoti hain data types:\n\n📌~1. Integer (int): Integers ko store karne ke liye use hota hai int data type. Integers 32-bit signed integers hoti hain.\n\n📌~2. Float (float): Float values ko store karne ke liye use hota hai float data type. Float values 32-bit single precision floating point numbers hoti hain.\n\n📌~3. Double (double): Double values ko store karne ke liye use hota hai double data type. Double values 64-bit double precision floating point numbers hoti hain.\n\n📌~4. Character (char): Characters ko store karne ke liye use hota hai char data type. Characters 8-bit signed integers hoti hain.\n\n📌~5. Boolean (bool): Boolean values ko store karne ke liye use hota hai bool data type. Boolean values 1-bit values hoti hain, jo either true ya false ho sakti hain.\n\n📌~6. Void (void): Void data type, return type ke liye use hota hai, jo koi value nahi return karta.\n\n\nYahan ek basic example diya gaya hai jismein C programming mein use hoti hain data types.",
+            "message":"🔴 Data Types in C programming mein, variables ke liye memory allocation ke liye use hoti hain.\n\n📌~1. Integer (int): Integers ko store karne ke liye use hota hai int data type. Integers 32-bit signed integers hoti hain.\n\n📌~2. Float (float): Float values ko store karne ke liye use hota hai float data type. Float values 32-bit single precision floating point numbers hoti hain.\n\n📌~3. Double (double): Double values ko store karne ke liye use hota hai double data type. Double values 64-bit double precision floating point numbers hoti hain.\n\n📌~4. Character (char): Characters ko store karne ke liye use hota hai char data type. Characters 8-bit signed integers hoti hain.\n\n📌~5. Boolean (bool): Boolean values ko store karne ke liye use hota hai bool data type. Boolean values 1-bit values hoti hain, jo either true ya false ho sakti hain.\n\n📌~6. Void (void): Void data type, return type ke liye use hota hai, jo koi value nahi return karta.\n\n\nYahan ek basic example diya gaya hai jismein C programming mein use hoti hain data types.",
             "example":"#include <stdio.h>\n#include <stdbool.h>\n\nint main() {\n    int a = 10;\n    float b = 20.5;\n    char c = 'A';\n    bool d = true;\n\n    printf(\"Value of a is: %d\\n\", a);\n    printf(\"Value of b is: %f\\n\", b);\n    printf(\"Value of c is: %c\\n\", c);\n    printf(\"Value of d is: %d\\n\", d);\n\n    return 0;\n}",
             "remcont":"🔴 Is example mein, 'int', 'float', 'char', aur 'bool' data types ke through variables banaye gaye hain aur values assign kiye gaye hain. Aur, 'printf' function ka use kiya gaya hai jismein variables ke values print kiye gaye hain.\n\n"
         },
         {
             "id": 8,
             "name": "C Operators",
-            "message":"🔴 ",
-        "example":"",
-        "remcont":""
+            "message":"🔴 Operators in C programming mein, variables aur constants ke expressions mein use hoti hain.\n\n📌~1. Arithmetic Operators: Arithmetic operators ko use karke, arithmetic calculations ke liye use hoti hain. Jaise ki, '+' (addition), '-' (subtraction), '*' (multiplication), '/' (division), aur '%' (modulus).\n\n📌~2. Relational Operators: Relational operators ko use karke, two expressions ke beech relation ko check kar sakte hain. Jaise ki, '<' (less than), '>' (greater than), '<=' (less than or equal to), '>=' (greater than or equal to), '==' (equal to), aur '!=' (not equal to).\n\n📌~3. Logical Operators: Logical operators ko use karke, two boolean expressions ke beech relation ko check kar sakte hain. Jaise ki, '&&' (logical AND), '||' (logical OR), aur '!' (logical NOT).\n\n📌~4. Assignment Operators: Assignment operators ko use karke, value assign kar sakte hain variables ko. Jaise ki, = (assignment), '+=' (addition assignment), '-=' (subtraction assignment), '*=' (multiplication assignment), aur '/=' (division assignment).\n\n📌~5. Increment and Decrement Operators: Increment and decrement operators ko use karke, value increase ya decrease kar sakte hain variables ko. Jaise ki, '++' (increment), aur '--' (decrement).\n\n📌~6. Conditional Operator: Conditional operator ko use karke, ek expression ke based par do expressions mein select kar sakte hain. Jaise ki, '?' \n\nYahan ek basic example diya gaya hai jismein C programming mein use hoti hain operators\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    int a = 10;\n    int b = 5;\n\n    printf(\"a + b = %d\\n\", a + b);\n    printf(\"a - b = %d\\n\", a - b);\n    printf(\"a * b = %d\\n\", a * b);\n    printf(\"a / b = %d\\n\", a / b);\n    printf(\"a %% b = %d\\n\", a %% b);\n\n    printf(\"a < b = %d\\n\", a < b);\n    printf(\"a > b = %d\\n\", a > b);\n    printf(\"a <= b = %d\\n\", a <= b);\n    printf(\"a >= b = %d\\n\", a >= b);\n    printf(\"a == b = %d\\n\", a == b);\n    printf(\"a != b = %d\\n\", a != b);\n\n    printf(\"a && b = %d\\n\", a && b);\n    printf(\"a || b = %d\\n\", a || b);\n    printf(\"!a = %d\\n\", !a);\n\n    a += 5;\n    printf(\"a = %d\\n\", a);\n\n    a++;\n    printf(\"a = %d\\n\", a);\n\n    int result = (a > b) ? 10 : 20;\n    printf(\"result = %d\\n\", result);\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, arithmetic, relational, logical, assignment, increment and decrement, aur conditional operators ke through expressions banaye gaye hain aur values print kiye gaye hain."
         },
         {
-            "id": 9,
+            "id": "9",
             "name": "String in C",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 Strings in C programming mein, sequence of characters hoti hain, jo null character ke saath end hoti hain.\n\n📌~1: Strings C programming mein, character arrays hoti hain. Jaise ki, 'char name[10];'\n\n📌~2: Strings mein, null character '\\0' array ke end mein hota hai.\n\n📌~3: Strings ko initialize karne ke liye, double quotes ke saath initialize karte hain. Jaise ki, char 'name[] = \"Abhivishrut\";'\n\n📌~4: Strings ko print karne ke liye, 'printf' function ka use kiya jata hai. Jaise ki, 'printf(\"Hello, %s\n\", name);'\n\n📌~5: Strings ko concatenate karne ke liye, 'strcat' function ka use kiya jata hai. Jaise ki, 'strcat(name, \"Bishnoi\");'\n\n📌~6: Strings ko compare karne ke liye, 'strcmp' function ka use kiya jata hai. Jaise ki, 'strcmp(name1, name2)'\n\n📌~7: Strings ko length determine karne ke liye, 'strlen' function ka use kiya jata hai. Jaise ki, 'strlen(name)'\n\nYahan ek basic example diya gaya hai jismein C programming mein strings ka use kiya gaya hai.\n",
+        "example":"#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char name1[20] = \"Abhivishrut\";\n    char name2[10] = \"Bishnoi\";\n\n    printf(\"Hello, %s %s\\n\", name1, name2);\n\n    strcat(name1, \" \");\n    strcat(name1, name2);\n\n    printf(\"Full name is: %s\\n\", name1);\n\n    int result = strcmp(name1, \"Abhivishrut Bishnoi\");\n    printf(\"Comparison result is: %d\\n\", result);\n\n    int length = strlen(name1);\n    printf(\"Length of full name is: %d\\n\", length);\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, strings 'name1' aur 'name2' ke through variables banaye gaye hain aur values assign kiye gaye hain. Aur, 'printf', 'strcat', 'strcmp', aur 'strlen' function ka use kiya gaya hai jismein strings ke values print, concatenate, compare, aur length determine kiye gaye hain.\n\n"
         },
         {
             "id": 10,
             "name": "if else in C",
-            "message":"",
-            "example":"",
-            "remcont":""
+            "message":"🔴 In C programming, if else statements used hain decision making ke liye.\n\n📌~1. 'if else' statements C programming mein, 'if' aur 'else' keywords ka use karke decision making ke liye kewal ek statements ya block of statements ke liye use kiye jate hain.\n\n📌~2. 'if' statement ke through, agar condition true hoti hai, toh associated block of statements execute hote hain.\n\n📌~3. 'else' statement ke through, agar 'if' statement ke condition false hoti hai, toh associated block of statements execute hote hain.\n\n📌~4. 'if else' statements mein, 'else if' keyword bhi use kiya jata hai agar multiple conditions check kiye jaana hai.\n\n📌~5. 'if else' statements mein, 'nested if else' bhi ho sakte hain, jismein ek 'if else' statements ke andar doosre 'if else' statements ke use kiye jate hain.\n\nYahan ek basic example diya gaya hai jismein C programming mein if else statements ka use kiya gaya hai.",
+            "example":"#include <stdio.h>\n\nint main() {\n    int age = 18;\n\n    if (age >= 18) {\n        printf(\"You are eligible to vote.\\n\");\n    } else {\n        printf(\"You are not eligible to vote.\\n\");\n    }\n\n    int number = 10;\n\n    if (number > 5) {\n        printf(\"Number is greater than 5.\\n\");\n    } else if (number < 5) {\n        printf(\"Number is less than 5.\\n\");\n    } else {\n        printf(\"Number is equal to 5.\\n\");\n    }\n\n    int marks = 85;\n\n    if (marks >= 90 && marks <= 100) {\n        printf(\"Grade: A+\\n\");\n    } else if (marks >= 80 && marks < 90) {\n        printf(\"Grade: A\\n\");\n    } else if (marks >= 70 && marks < 80) {\n        printf(\"Grade: B\\n\");\n    } else {\n        printf(\"Grade: F\\n\");\n    }\n\n    return 0;\n}",
+            "remcont":"🔴 Is example mein, 'if else' statements ke through, age, number, aur marks ke based par, multiple decisions likhe gaye hain."
         },
         {
             "id": 11,
             "name": "while Loop in C",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 In C programming, while loop used hain decision making ke liye.\n\n📌~1. 'while' loop ke through, loop ke andar ke statements repeat karte rehte hain agar condition true hoti hai.\n\n📌~2. 'while' loop ke through, ek expression check kiya jata hai before executing the loop.\n\n📌~3. 'while' loop ke through, 'break' aur 'continue' keywords bhi use kiye jate hain.\n\n📌~4. 'while' loop ke andar, 'nested while' bhi ho sakte hain.\n\nYahan ek basic example diya gaya hai jismein C programming mein while loop ka use kiya gaya hai.\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    int i = 1;\n\n    while (i <= 5) {\n        printf(\"%d \", i);\n        i++;\n    }\n\n    printf(\"\\n\");\n\n    int number = 10;\n    int factorial = 1;\n\n    while (number > 0) {\n        factorial *= number;\n        number--;\n    }\n\n    printf(\"Factorial of 10 is: %d\\n\", factorial);\n\n    int sum = 0;\n    int j = 1;\n\n    while (j <= 10) {\n        sum += j;\n        j++;\n    }\n\n    printf(\"Sum of 1 to 10 is: %d\\n\", sum);\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, 'while' loop ke through, multiple statements repeat kiye gaye hain.\n\n"
         },
         {
             "id": 12,
             "name": "do while Loop in C",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 'Do-while' loop ek exit-controlled loop hai, jismein loop ke body first execute hote hain phir test condition check hoti hai. Isse, loop ke body minimum ek baar execute hone ka guarantee hai.\n\nYahan ek basic example diya gaya hai jismein C programming mein do-while loop ka use kiya gaya hai.\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    int i = 1;\n\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i <= 5);\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, 'do-while' loop ke through, variable 'i' ko 'printf' function ka use se print kiya gaya hai. Aur, loop ke body ek baar execute hone ke baad, test condition 'i <= 5' check hoti hai. Jab tak test condition true hoti hai, loop ke body repeat karte rehte hain."
         },
         {
             "id": 13,
             "name": "for Loop",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 For loop ek entry-controlled loop hai, jismein test condition check hoti hai before executing the loop. Isse, loop ke body execute nahi hone par test condition check hoti hai.\n\n📌~1. Initialization: Ek variable initialize kiya jata hai, jismein loop ke liye use ki jaana hai.\n\n📌~2. Condition: Ek expression check kiya jata hai, jismein loop ke liye use ki jaana hai.\n\n📌~3. Increment/Decrement: Ek expression check kiya jata hai, jismein loop ke liye use ki jaana hai.\n\n📌 4. For loop ke andar, 'nested for' bhi ho sakte hain.\n\nYahan ek basic example diya gaya hai jismein C programming mein for loop ka use kiya gaya hai.",
+        "example":"#include <stdio.h>\n\nint main() {\n    for (int i = 1; i <= 5; i++) {\n        printf(\"%d \", i);\n    }\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, for loop ke through, variable 'i' ko 'printf' function ka use se print kiya gaya hai. Aur, loop ke initial value '1', condition 'i <= 5', aur increment 'i++' ke through, loop ke body execute hone ke liye guarantee kiya gaya hai.\n\n"
         },
         {
             "id": 14,
             "name": "Continue statement",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 Continue statement in C programming mein, ek loop ko control karta hai, aur usmein ek iteration ko skip karta hai. Isse, loop ka ek iteration bypass hota hai aur next iteration shuru hota hai.\n\nYahan ek basic example diya gaya hai jismein C programming mein continue statement ka use kiya gaya hai.\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    for (int i = 1; i <= 10; i++) {\n        if (i % 2 == 0) {\n            continue;\n        }\n        printf(\"%d \", i);\n    }\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, for loop ke through, variable 'i' ko 'printf' function ka use se print kiya gaya hai. Aur, jab variable 'i' even hai, toh continue statement ka use se loop ka ek iteration bypass kiya gaya hai aur next iteration shuru kiya gaya hai.\n\n"
         },
         {
             "id": 15,
             "name": "break statement",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 Break statement in C programming mein, ek loop ko control karta hai, aur usmein loop ko stop karta hai. Isse, loop ke baad ka execution next statement se shuru hota hai.\n\nYahan ek basic example diya gaya hai jismein C programming mein break statement ka use kiya gaya hai.\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    for (int i = 1; i <= 10; i++) {\n        if (i == 5) {\n            break;\n        }\n        printf(\"%d \", i);\n    }\n\n    printf(\"\\nLoop stopped at %d\", i);\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, for loop ke through, variable 'i' ko 'printf' function ka use se print kiya gaya hai. Aur, jab variable 'i' ko '5' ke equal hota hai, toh break statement ka use se loop ko stop kiya gaya hai aur next statement execute kiya gaya hai.\n\n"
         },
         {
             "id": 16,
             "name": "switch statement",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 Switch statement in C programming mein, multiple conditions check karta hai aur ek saath mein multiple statements execute kar sakta hai.\n\n📌~1: Switch statement ke through, ek variable ka value check kiya jata hai.\n\n📌~2: Switch statement mein, case aur default keywords use kiye jate hain.\n\n📌~3: 'case' ke through, ek value check kiya jata hai aur uske correspondent statements execute hote hain.\n\n📌~4: 'default' ke through, agar koi 'case' ko match nahi kiya gaya hai, toh 'default' ke correspondent statements execute hote hain.\n\n📌~5: Switch statement mein, 'break' aur 'continue' keywords bhi use kiye jate hain.\n\n📌~6: Switch statement mein, 'nested switch' bhi ho sakte hain.\n\nYahan ek basic example diya gaya hai jismein C programming mein switch statement ka use kiya gaya hai.\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    int number = 3;\n\n    switch (number) {\n        case 1:\n            printf(\"Number is 1\\n\");\n            break;\n        case 2:\n            printf(\"Number is 2\\n\");\n            break;\n        case 3:\n            printf(\"Number is 3\\n\");\n            break;\n        default:\n            printf(\"Number is not 1, 2 or 3\\n\");\n            break;\n    }\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, switch statement ke through, variable 'number' ka value check kiya gaya hai. Aur, 'case' ke through, jab variable 'number' ke value '1', '2', aur '3' ke equal hota hai, toh 'printf' function ka use se statements execute hote hain.\n\n"
         },
         {
             "id": 17,
             "name": "goto Statement",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 Goto statement in C programming mein, ek label ke through control directly transfer karta hai.\n\n📌~1: Goto statement ke through, ek label ke through control directly transfer kiya jata hai.\n\n📌~2: Goto statement ke label mein, ':' ka use kiya jata hai.\n\n📌~3: Goto statement mein, 'break' aur 'continue' statements ke saath use nahi kiye jate.\n\n📌~4: Goto statement ke through, multiple times label ke through control transfer kiya jata hai.\n\n📌~5: Goto statement ka use, programming mein maintain karne aur readability mein asar deta hai.\n\nYahan ek basic example diya gaya hai jismein C programming mein goto statement ka use kiya gaya hai.\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    int i;\n\n    start:\n    for (i = 1; i <= 5; i++) {\n        printf(\"%d \", i);\n    }\n\n    printf(\"\\n\");\n\n    goto start;\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, goto statement ke through, 'start' label ke through control transfer kiya gaya hai. Aur, loop ke body mein, 'printf' function ka use se variable 'i' ko print kiya gaya hai.\n\n"
         },
         {
             "id": 18,
             "name": "Array in C",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 In C programming, arrays ka use hain ek collection of elements ko store karna.\n\n📌~1: Array ek fixed size ki collection hai.\n\n📌~2: Array ke elements ek data type ke correspondent hote hain.\n\n📌~3: Array ke elements ek continuous memory location mein store hote hain.\n\n📌~4: Array ke elements ko, index ke through access kiya jata hai.\n\n📌~5: Array ke index shuru mein 0 se shuru hoti hai.\n\n📌~6: Array ke elements ko, 'for' aur 'while' loops ke through access kiya jata hai.\n\n📌~7: Array ke elements ko, functions ke through pass kiya jata hai.\n\nYahan ek basic example diya gaya hai jismein C programming mein array ka use kiya gaya hai.\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    int numbers[5] = {1, 2, 3, 4, 5};\n\n    for (int i = 0; i < 5; i++) {\n        printf(\"%d \", numbers[i]);\n    }\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, numbers array mein, 5 integers store kiye gaye hain. Aur, for loop ke through, numbers array ke elements ko print kiye gaye hain.\n\n"
         },
         {
             "id": 19,
             "name": "Array Traversing",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 In C programming, array traversing ke through ek array ke elements ko iterate karna aur kisi operation ko perform karne ke liye use kiya jata hai. Yahan ek basic example diya gaya hai jismein C programming mein array traversing ke through array ke elements ko print kiya gaya hai.\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    int numbers[5] = {1, 2, 3, 4, 5};\n\n    for (int i = 0; i < 5; i++) {\n        printf(\"%d \", numbers[i]);\n    }\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, 'numbers' array mein, 5 integers store kiye gaye hain. Aur, 'for' loop ke through, 'numbers' array ke elements ko print kiye gaye hain.\n\n"
         },
         {
             "id": 20,
             "name": "Multidimensional Array",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 Multidimensional arrays in C programming mein, multiple arrays store karne ke liye use hota hain.\n\n📌~1: Multidimensional arrays, ek array ke elements ko, ek aur array mein store karne ke liye use hai.\n\n📌~2: Multidimensional arrays ke elements, multiple indexes ke through access kiye jate hain.\n\n📌~3: Multidimensional arrays mein, ek array ke elements, ek aur array ke elements ke roop mein access kiya jata hai.\n\n📌~4: Multidimensional arrays mein, jagah jagah different data types ke elements store kiye jate hain.\n\n📌~5: Multidimensional arrays ka use, matrix, table, graph, etc. represent karne ke liye kiya jata hai.\n\nYahan ek basic example diya gaya hai jismein C programming mein multidimensional array ka use kiya gaya hai.\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    int numbers[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n\n    for (int i = 0; i < 3; i++) {\n        for (int j = 0; j < 3; j++) {\n            printf(\"%d \", numbers[i][j]);\n        }\n        printf(\"\\n\");\n    }\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, 'numbers' ek 3x3 ke multidimensional array hai. Aur, 'for' loops ke through, 'numbers' array ke elements ko print kiye gaye hain.\n\n"
         },
         {
             "id": 21,
             "name": "Function in C",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 Functions in C programming mein, ek code block hai jismein ek specific task perform kiya jata hai.\n\n📌~1: Functions ek code block hai jismein ek specific task perform kiya jata hai.\n\n📌~2: Functions ko, multiple times reuse karne ke liye use kiya jata hai.\n\n📌~3: Functions mein, multiple variables aur code blocks ho sakte hain.\n\n📌~4: Functions ka syntax yeh hai: 'return_type function_name(parameters) { /* code block */ }'\n\n📌~5: Functions ke return type, function ke execution ke baad, kya return karega decide karta hai.\n\n📌~6: Functions ke parameters, function ko, ek aur data provide karne ke liye use hote hain.\n\n📌~7: Functions ke through, code ka modularity aur maintainability badhti hai.\n\n📌~8: Functions ke through, code ka readability aur reusability badhti hai.\n",
+        "example":"#include <stdio.h>\n\nint square(int num) {\n    return num * num;\n}\n\nint main() {\n    int number = 5;\n    int result = square(number);\n    printf(\"Square of %d is %d\", number, result);\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, 'square' ek function hai jismein ek number ka square calculate kiya gaya hai. Aur, 'main' function mein, 'square' function ko call kiya gaya hai aur uske through, square calculate kiya gaya hai.\n\n"
         },
         {
             "id": 22,
             "name": "Parameterized Function",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 Parameterized functions in C programming mein, ek specific task perform karne ke liye ek aur data ko accept karte hain.\n\n📌~1: Parameterized functions ek specific task perform karne ke liye ek aur data ko accept karte hain.\n\n📌~2: Parameterized functions ke parameters, function ko, ek aur data provide karne ke liye use hote hain.\n\n📌~3: Parameterized functions mein, multiple parameters ho sakte hain.\n\n📌~4: Parameterized functions mein, multiple data types ke parameters ho sakte hain.\n\n📌~5: Parameterized functions mein, default values set kiye ja sakte hain.\n\n📌~6: Parameterized functions mein, variable number of arguments (variadic functions) bhi ho sakte hain.\n\n📌~7: Parameterized functions ka syntax yeh hai: 'return_type function_name(parameters) { /* code block */ }'\n\n📌~8: Parameterized functions ke return type, function ke execution ke baad, kya return karega decide karta hai.\n\n",
+        "example":"#include <stdio.h>\n\nint add(int num1, int num2) {\n    return num1 + num2;\n}\n\nint main() {\n    int num1 = 5;\n    int num2 = 10;\n    int result = add(num1, num2);\n    printf(\"Sum of %d and %d is %d\", num1, num2, result);\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, 'add' ek parameterized function hai jismein do numbers ko add karke, ek result produce kiya gaya hai. Aur, 'main' function mein, 'add' function ko call kiya gaya hai aur uske through, do numbers ka sum calculate kiya gaya hai.\n\n"
         },
         {
             "id": 23,
             "name": "Recursive Function",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 Recursive functions in C programming mein, ek function hai jismein function itself ko call karte hain.\n\n📌~1: Recursive functions ek function hai jismein function itself ko call karte hain.\n\n📌~2: Recursive functions mein, base case aur recursive case dono hoti hain.\n\n📌~3: Base case ek condition hota hai jismein recursion stop hoti hai.\n\n📌~4: Recursive case ek condition hota hai jismein function ko, recursive calls karne ke liye use kiya jata hai.\n\n📌~5: Recursive functions mein, stack memory ko use kiya jata hai.\n\n📌~6: Recursive functions mein, multiple times same function ka code execute nahi hota.\n\n📌~7: Recursive functions ka syntax yeh hai: 'return_type function_name(parameters) { /* code block */ }'\n\n",
+        "example":"#include <stdio.h>\n\nint factorial(int num) {\n    if (num == 0) {\n        return 1;\n    } else {\n        return num * factorial(num - 1);\n    }\n}\n\nint main() {\n    int number = 5;\n    int result = factorial(number);\n    printf(\"Factorial of %d is %d\", number, result);\n\n    return 0;\n}",
+        "remcont":"🔴 Is example mein, 'factorial' ek recursive function hai jismein, ek number ka factorial calculate kiya gaya hai. Aur, 'main' function mein, 'factorial' function ko call kiya gaya hai aur uske through, ek number ka factorial calculate kiya gaya hai.\n\n"
         },
         {
             "id": 24,
             "name": "Call By Value And Call By Reference",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"📌~1. Call By Value:\n\nIs method me, functions ke parameters ke liye actual parameters ke values copy hoti hai. Isliye agar function me koi value change kare to wo original ke values par koi asar nahi patega. Yeh default method hai.\n\n📌~2. Call By Reference:\n\nIs method me, functions ke parameters ke liye actual parameters ke memory addresses pass hoti hai. Isliye agar function me koi value change kare to wo original ke values par directly asar patega. Iske liye hum pointers ka use karenge.\n",
+        "example":"// Call By Value\n#include <stdio.h>\n\nvoid changeValue(int x) {\n    x = 10;\n    printf(\"The value of x inside the function is %d\", x);\n}\n\nint main() {\n    int x = 5;\n    printf(\"The value of x before the function call is %d\", x);\n    changeValue(x);\n    printf(\"The value of x after the function call is %d\", x);\n    return 0;\n}\n\n\n\n// Call By Reference\n#include <stdio.h>\n\nvoid changeValue(int *x) {\n    *x = 10;\n    printf(\"The value of x inside the function is %d\", *x);\n}\n\nint main() {\n    int x = 5;\n    printf(\"The value of x before the function call is %d\", x);\n    changeValue(&x);\n    printf(\"The value of x after the function call is %d\", x);\n    return 0;\n}",
+        "remcont":"🔴 Call By Value aur Call By Reference ke beech ka farak yeh hai ki Call By Value me original values preserved hoti hai aur koi changes nahi hone deti, wheras Call By Reference me actual values directly modify hoti hai. Apne program ke requirements ke anuroop chunav karna zaroori hai.\n\n"
         },
         {
             "id": 25,
             "name": "Structure in C",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 C programming mein, structures ek user-defined data type hai jo kuchh bhi variable store karna allow karta hai.\n\n🔴 Structure ke variables ko initialize karne ke liye, humko unke saath memory allocate karna hoga. Yeh karne ke liye hum structure ke saath . operator ka use karte hai.\n",
+        "example":"#include <stdio.h>\n\nstruct Employee {\n    int id;\n    char name[50];\n    float salary;\n};\n\nvoid displayEmployee(struct Employee e) {\n    printf(\"ID: %d\\n\", e.id);\n    printf(\"Name: %s\\n\", e.name);\n    printf(\"Salary: %.2f\\n\", e.salary);\n}\n\nint main() {\n    struct Employee e1;\n    e1.id = 1;\n    strcpy(e1.name, \"Abhivishrut Bishnoi\");\n    e1.salary = 50000.00;\n\n    displayEmployee(e1);\n\n    return 0;\n}",
+        "remcont":"0"
         },
         {
             "id": 26,
             "name": "Pointers in C",
-            "message":"",
-        "example":"",
-        "remcont":""
+            "message":"🔴 C programming me, pointers hai variables jo other variables ke memory addresses store karte hai. Unke through hum variables ke memory addresses ko access kar sakte hai aur unhe change kar sakte hai.\n",
+        "example":"#include <stdio.h>\n\nint main() {\n    int x = 10;\n    int *ptr = &x; // & operator is used to get the memory address of a variable\n\n    printf(\"The value of x is %d\\n\", x);\n    printf(\"The memory address of x is %u\\n\", &x);\n    printf(\"The value of ptr is %u\\n\", ptr);\n    printf(\"The value stored at the memory address stored in ptr is %d\\n\", *ptr);\n\n    *ptr = 20;\n\n    printf(\"The value of x is now %d\\n\", x);\n\n    return 0;\n}",
+        "remcont":"🔴 Pointers ka use aap array ke saath bhi kar sakte hai. Iske liye hum array ke liye pointer declare karte hai aur unhe array ke first element ke memory address se initialize karte hai.\n\n"
         }
     ]
