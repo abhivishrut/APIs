@@ -219,156 +219,156 @@
     {
         "id": "32",
         "name": "Method Overloading",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 Method Overloading (METHOD OVERLOADING) in Java ek feature hai jisme same method name use kiya ja sakta hai, lekin parameters alag hon toh compiler able hai distinguish karna ki kis method ko call karna hai. Isse code readability aur flexibility badhti hai.\n\n🔴 Method overloading mein, method name same hona chahiye, lekin parameters alag honi chahiye. Parameters alag hona chahte hain ki unki type, number, aur sequence alag honi chahiye.\n",
+        "example": "class Calculator {\n    int add(int a, int b) {\n        return a + b;\n    }\n\n    double add(double a, double b) {\n        return a + b;\n    }\n\n    int add(int a, int b, int c) {\n        return a + b + c;\n    }\n}",
+        "remcont": "🔴 Is example mein, \"Calculator\" class mein \"add()\" method 3 baar overloaded kiya gaya hai. Isme, first method 2 integer parameters leta hai, second method 2 double parameters leta hai, aur third method 3 integer parameters leta hai.\n\n🔴 Method overloading mein, compiler automatically decide karta hai kis method ko call karna hai based on the parameters passed during the function call.\n\n🔴 Method overloading ka use aise areas mein bahut useful hai jisme similar functionality hoti hai, lekin parameter types alag hoti hai, jaise mathematical operations, etc.\n\n"
     },
     {
         "id": "33",
         "name": "Method Overriding",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 Method Overriding (METHOD OVERRIDING) in Java ek feature hai jisme child class same method ko override karta hai jisme parent class mein define kiya gaya hai. Isse child class ko parent class ke method ko override karke, uska behavior badal sakta hai.\n\n🔴 Method overriding mein, method name, return type, aur parameters same hona chahiye. Lekin, method body (implementation) alag hona chahiye.\n",
+        "example": "class Animal {\n    void sound() {\n        System.out.println(\"Making some animal sound...\");\n    }\n}\n\nclass Dog extends Animal {\n    void sound() {\n        System.out.println(\"Barking...\");\n    }\n}",
+        "remcont": "🔴 Is example mein, \"Animal\" class mein \"sound()\" method define kiya gaya hai, aur \"Dog\" class mein same method override kiya gaya hai. Isse, \"Dog\" class ke object ko \"sound()\" method call kiya jaye toh \"Barking...\" print hoga, aur \"Animal\" class ke object ko \"sound()\" method call kiya jaye toh \"Making some animal sound...\" print hoga.\n\n🔴 Method overriding mein, Java compiler automatically checks whether method overriding hai ya nahi, aur overriding method ko \"final\" keyword se override nahi kiya jaye.\n\n🔴 Method overriding ka use aise areas mein bahut useful hai jisme parent class aur child class mein similar functionality hoti hai, lekin child class mein custom behavior chahta hai, jaise animal sounds, etc.\n\n"
     },
     {
         "id": "34",
         "name": "super Keyword",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"super\" keyword ek special keyword hai jo use karna possible hai child class mein, jisme parent class ke properties aur methods ko access karne ke liye use kiya jata hai.\n\n🔴 \"Super\" keyword ka use aise areas mein bahut useful hai jisme child class parent class ke properties aur methods ko inherit karta hai.\n",
+        "example": "class Animal {\n    String name;\n\n    Animal(String name) {\n        this.name = name;\n    }\n\n    void printName() {\n        System.out.println(\"Animal Name: \" + name);\n    }\n}\n\nclass Dog extends Animal {\n    Dog(String name) {\n        super(name);\n    }\n\n    void printDogName() {\n        super.printName();\n        System.out.println(\"Dog Name: \" + name);\n    }\n}",
+        "remcont": "🔴 Is example mein, \"Animal\" class mein \"name\" property aur \"printName()\" method define kiye gaye hain. \"Dog\" class mein \"printDogName()\" method define kiya gaya hai, jisme \"super.printName()\" ka use kiya gaya hai. Isse, \"printName()\" method call ho jaega parent class mein, aur \"Dog\" class ke object ko \"printDogName()\" method call kiya jaye toh \"Animal Name: <name>\" aur \"Dog Name: <name>\" print hoga.\n\n🔴 \"Super\" keyword ka use aise areas mein bahut useful hai jisme child class parent class ke properties ko modify karna ho, jaise super class constructor ko call karne ke liye, etc.\n\n"
     },
     {
         "id": "35",
         "name": "Polymorphism",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 Polymorphism (POLYMORPHISM) in Java ek feature hai jisme same method ko same object ke through multiple forms mein use kiya jata hai. Isse code readability aur flexibility badhti hai.\n\n🔴 Polymorphism mein, same method ko same object ke through multiple forms mein use kiya jata hai, lekin implementation alag hoti hai. Isse, single method ko multiple tasks perform karne mein help milta hai.\n\n🔴 Polymorphism mein, main 2 types hain: compile-time polymorphism aur runtime polymorphism.\n\n📌~1. Compile-time polymorphism: In compile-time polymorphism, method call compile time ke time decide hoti hai. Isse, performance mein benefit hota hai. Compile-time polymorphism ko method overloading kehte hain.\n\n📌~2. Runtime polymorphism: In runtime polymorphism, method call runtime ke time decide hoti hai. Isse, flexibility mein benefit hota hai. Runtime polymorphism ko method overriding kehte hain.\n",
+        "example": "// Compile-time polymorphism\nclass HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n\n\n// Runtime polymorphism\nclass Animal {\n    void sound() {\n        System.out.println(\"Making some animal sound...\");\n    }\n}\n\nclass Dog extends Animal {\n    void sound() {\n        System.out.println(\"Barking...\");\n    }\n}",
+        "remcont": "🔴~Compile-time polymorphism Example: Is example mein, \"Calculator\" class mein \"add()\" method 2 baar overloaded kiya gaya hai. Isse, \"Calculator\" class ke object ko \"add()\" method call kiya jaye toh compiler automatically decide karta hai kis method ko call karna hai based on the parameters passed during the function call.\n\n🔴~Runtime polymorphism Example: Is example mein, \"Animal\" class mein \"sound()\" method define kiya gaya hai, aur \"Dog\" class mein same method override kiya gaya hai. Isse, \"Animal\" class aur \"Dog\" class ke object ko \"sound()\" method call kiya jaye toh runtime ke time decide hota hai kis method ko call karna hai.\n\n🔴 Polymorphism ka use aise areas mein bahut useful hai jisme same method ko multiple tasks perform karne ho, jaise mathematical operations, animal sounds, etc.\n\n"
     },
     {
         "id": "36",
         "name": "Inner Class",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 Inner Classes (INNER CLASSES) in Java ek feature hai jisme child class parent class ke andar define ki ja sakti hai. Isse, inner class parent class ke data aur methods ko access kar sakti hai, aur ek class mein multiple inner classes define kar sakte hain.\n\n🔴 Inner classes mein, main 2 types hain: member inner classes aur local inner classes.\n\n📌~1. Member Inner Classes: Member inner classes parent class ke member hote hai. Isse, parent class ke object ke through inner class ka object bana sakta hai.\n\n📌~2. Local Inner Classes: Local inner classes parent class ke andar, function ke andar define kiye jate hain. Isse, local inner class parent class ke data aur methods ko access kar sakti hai, lekin ek function ke andar hi define kiye jate hain.\n\n",
+        "example": "// Member Inner Classes\nclass OuterClass {\n    class InnerClass {\n        void printMessage() {\n            System.out.println(\"Hello from Inner Class!\");\n        }\n    }\n\n    void printMessageFromOuterClass() {\n        InnerClass innerClass = new InnerClass();\n        innerClass.printMessage();\n    }\n}\n\n\n// Local Inner Classes\nclass OuterClass {\n    void printMessage() {\n        class LocalInnerClass {\n            void printMessage() {\n                System.out.println(\"Hello from Local Inner Class!\");\n            }\n        }\n\n        LocalInnerClass localInnerClass = new LocalInnerClass();\n        localInnerClass.printMessage();\n    }\n}",
+        "remcont": "🔴~Member Inner Classes Example: Is example mein, \"OuterClass\" mein \"InnerClass\" define kiya gaya hai. \"OuterClass\" ke object ke through \"InnerClass\" ka object bana sakta hai, aur \"InnerClass\" ke method \"printMessage()\" call kar sakta hai.\n\n🔴~Local Inner Classes Example: Is example mein, \"OuterClass\" mein \"printMessage()\" function mein \"LocalInnerClass\" define kiya gaya hai. \"LocalInnerClass\" ke method \"printMessage()\" call kar sakta hai, lekin ek function ke andar hi define kiya gaya hai.\n\n🔴 Inner classes ke saath, parent class ke data aur methods ko access karne ke liye ek special keyword \"outerClassInstance.innerClassInstance\" ka use kiya jata hai.\n\n🔴 Inner classes ka use aise areas mein bahut useful hai jisme parent class aur inner class mein related data aur methods hai, jaise GUI programming, etc.\n\n"
     },
     {
         "id": "37",
         "name": "Abstract Class",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 Abstract Classes (ABSTRACT CLASSES) in Java ek feature hai jisme parent class ke through child classes banae ja sakte hain, lekin parent class ke methods ko define nahi kiya jata. Isse, child classes ke liye mandatory hota hai parent class ke methods ko override karna.\n\n🔴 Abstract classes mein, \"abstract\" keyword use kiya jata hai. Abstract classes ke andar, abstract aur non-abstract methods bhi define kar sakte hain. Lekin, abstract methods ke implementation nahi hoti hai, child classes mein hi define hoti hai.\n",
+        "example": "abstract class Animal {\n    abstract void sound();\n\n    void printMessage() {\n        System.out.println(\"Making some animal sound...\");\n    }\n}\n\nclass Dog extends Animal {\n    void sound() {\n        System.out.println(\"Barking...\");\n    }\n}",
+        "remcont": "🔴 Is example mein, \"Animal\" class abstract hai, aur \"sound()\" method abstract hai. \"Dog\" class \"Animal\" class se extend kiya hai, aur \"sound()\" method override kiya hai.\n\n🔴 Abstract classes ke saath, parent class ke data aur methods ko access karne ke liye ek special keyword \"super\" ka use kiya jata hai.\n\n🔴 Abstract classes ke use aise areas mein bahut useful hai jisme parent class aur child classes mein related data aur methods hai, lekin child classes ke liye mandatory hota hai parent class ke methods ko implement karna ho, jaise animal sounds, etc.\n\n"
     },
     {
         "id": "38",
         "name": "Interface",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 Interfaces in Java ek feature hai jisme multiple inheritance ko support kiya jata hai. Interfaces mein, multiple parent interfaces ko child interface ke through inherit karna possible hai. Interfaces mein, only abstract methods hote hai, implementation nahi hoti hai.\n\n🔴 Interfaces mein, \"interface\" keyword use kiya jata hai. Interfaces ke methods implicitly \"public abstract\" hoti hai, lekin variables implicitly \"public static final\" hoti hai.\n",
+        "example": "interface Animal {\n    void sound();\n}\n\ninterface Runner {\n    void run();\n}\n\ninterface AnimalRunner extends Animal, Runner {\n    void printMessage();\n}\n\nclass Dog implements AnimalRunner {\n    public void sound() {\n        System.out.println(\"Barking...\");\n    }\n\n    public void run() {\n        System.out.println(\"Running...\");\n    }\n\n    public void printMessage() {\n        System.out.println(\"Printing message...\");\n    }\n}",
+        "remcont": "🔴 Is example mein, \"Animal\" aur \"Runner\" interfaces hai, aur \"AnimalRunner\" interface \"Animal\" aur \"Runner\" interfaces ko inherit karta hai. \"Dog\" class \"AnimalRunner\" interface ko implement karta hai, aur \"sound()\", \"run()\", aur \"printMessage()\" methods implement karta hai.\n\n🔴 Interfaces ke saath, parent interfaces ke methods ko access karne ke liye ek special keyword \"implementingClassInstance.methodName()\" ka use kiya jata hai.\n\n🔴 Interfaces ke use aise areas mein bahut useful hai jisme multiple inheritance chaahiye, lekin Java mein single inheritance hoti hai, jaise GUI programming, etc.\n\n"
     },
     {
         "id": "39",
         "name": "final Keyword",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"final\" keyword use kiya jata hai class, method, aur variable ke modifier ke roop mein. \"final\" keyword ka use karke, class, method, aur variable ko immutable (constant) banaya jata hai.\n\n🔴 Class ko final banane se, class ko extend nahi kiya ja sakta. Lekin, class ke methods ko final nahi banaya jaye toh, child class mein overriding kar sakte hai.\n\n🔴 Method ko final banane se, method ko overriding nahi kiya ja sakta.\n\n🔴 Variable ko final banane se, variable ka value assign karne ke baad, value change nahi ho sakta. Lekin, variable ko initialize karne ke baad, value assign nahi kiya jaye toh, compiler error nahi degi.\n",
+        "example": "final class ImmutableClass {\n    final int value = 10;\n\n    final void printMessage() {\n        System.out.println(\"Hello from ImmutableClass!\");\n    }\n}\n\nclass ChildClass extends ImmutableClass {\n    // Cannot extend final class\n}\n\nclass ChildClass2 extends ImmutableClass {\n    @Override\n    void printMessage() {\n        // Cannot override final method\n    }\n}\n\nclass ChildClass3 {\n    ImmutableClass immutableClass = new ImmutableClass();\n\n    void changeValue() {\n        // Cannot change value of final variable\n        // immutableClass.value = 20;\n\n        // Cannot create new object of final class\n        // immutableClass = new ImmutableClass();\n    }\n\n    void callMethod() {\n        immutableClass.printMessage();\n    }\n}",
+        "remcont": "🔴 Is example mein, \"ImmutableClass\" ko final banaya gaya hai, isliye \"ChildClass\" nahi bana sakta. \"printMessage()\" method ko final banaya gaya hai, isliye \"ChildClass2\" mein overriding nahi kiya gaya hai. \"value\" variable ko final banaya gaya hai, isliye \"changeValue()\" function mein value nahi change kiya gaya hai.\n\n🔴 \"final\" keyword ka use aise areas mein bahut useful hai jisme data aur methods ko immutable banana ho, jaise string class, etc.\n\n"
     },
     {
         "id": "40",
         "name": "Method Introduction",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"method introduction\" (method addition) ek feature hai jisme parent class mein define hone wale methods ko child class mein add karne ke liye use kiya jata hai. Isse, child class mein parent class ke methods ke alawa, apne aap ke methods bhi define kar sakta hai.\n\n🔴 Method introduction mein, \"method\" keyword use kiya jata hai. Method introduction ke baad, child class mein parent class ke methods ke alawa, apne aap ke methods bhi honge.\n",
+        "example": "class Animal {\n    void sound() {\n        System.out.println(\"Making some animal sound...\");\n    }\n}\n\nclass Dog extends Animal {\n    void introduce() {\n        System.out.println(\"Hello, I am a Dog!\");\n    }\n\n    @Override\n    void sound() {\n        System.out.println(\"Barking...\");\n    }\n}",
+        "remcont": "🔴 Is example mein, \"Animal\" class mein \"sound()\" method hai, aur \"Dog\" class \"Animal\" class se extend kiya hai. \"Dog\" class mein \"introduce()\" method bhi define kiya hai, jisme \"Hello, I am a Dog!\" print hoga. Aur, \"sound()\" method override kiya hai, jisme \"Barking...\" print hoga.\n\n🔴 Method introduction ke saath, parent class ke data aur methods ko access karne ke liye ek special keyword \"super\" ka use kiya jata hai.\n\n🔴 Method introduction ke use aise areas mein bahut useful hai jisme parent class ke methods ko extend karna hai, lekin child class ke liye parent class ke methods ke alawa, apne aap ke methods bhi define karna ho, jaise animal sounds, etc.\n\n"
     },
     {
         "id": "41",
         "name": "Parameterized Method",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"parameterized methods\" (methods with parameters) ek feature hai jisme methods ke through input values pass karne ke liye use kiya jata hai. Isse, methods ke behavior customize kar sakte hai.\n\n🔴 Parameterized methods mein, methods ke saath parameters define kiye jate hai. Parameters ke saath, methods ke behavior customize kar sakte hai.\n",
+        "example": "class Animal {\n    void sound() {\n        System.out.println(\"Making some animal sound...\");\n    }\n}\n\nclass Dog extends Animal {\n    void introduce() {\n        System.out.println(\"Hello, I am a Dog!\");\n    }\n\n    @Override\n    void sound() {\n        System.out.println(\"Barking...\");\n    }\n}",
+        "remcont": "🔴 Is example mein, \"Calculator\" class mein \"add()\", \"subtract()\", \"multiply()\", aur \"divide()\" methods hain. \"add()\", \"subtract()\", aur \"multiply()\" methods ke parameters \"a\" aur \"b\" hain, aur return type \"int\" hai. \"divide()\" method ke parameters \"a\" aur \"b\" hain, aur return type \"double\" hai.\n\n🔴 Parameterized methods ke saath, methods ke behavior customize karne ke liye, different input values pass kar sakte hai.\n\n🔴 Parameterized methods ke use aise areas mein bahut useful hai jisme methods ke behavior customize karna hai based on input values, jaise mathematical operations, etc.\n\n"
     },
     {
         "id": "42",
         "name": "User input",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"user input\" ek feature hai jisme user ke through keyboard se input values provide kar sakte hai. Isse, programs ke behavior customize kar sakte hai based on user input.\n\n🔴 User input ke liye, \"java.util.Scanner\" class ka use kiya jata hai. Scanner class ke through, user ke through keyboard se input values read kar sakte hai.\n",
+        "example": "import java.util.Scanner;\n\npublic class UserInputExample {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.print(\"Enter your name: \");\n        String name = scanner.nextLine();\n\n        System.out.print(\"Enter your age: \");\n        int age = scanner.nextInt();\n\n        System.out.println(\"Hello, \" + name + \"! You are \" + age + \" years old.\");\n\n        scanner.close();\n    }\n}",
+        "remcont": "🔴 Is example mein, \"Scanner\" class ka object \"scanner\" banaya gaya hai, jisme \"System.in\" parameter pass kiya gaya hai. Isse, user ke through keyboard se input values read kar sakte hai.\n\n🔴 \"nextLine()\" method user se line wise input values read karta hai. \"nextInt()\" method user se integer input values read karta hai.\n\n🔴 User input ke saath, programs ke behavior customize karne ke liye, different input values user se input kar sakte hai.\n\n🔴 User input ke use aise areas mein bahut useful hai jisme user ke input values se programs ke behavior customize karna ho, jaise form filling, user authentication, etc.\n\n"
     },
     {
         "id": "43",
         "name": "Date and Time",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"Date and Time\" ek feature hai jisme system ke through date aur time values access kar sakte hai. Isse, programs ke behavior customize kar sakte hai based on date aur time.\n\n🔴 Date and Time ke liye, \"java.time\" package ka use kiya jata hai. Java 8 se lekar aage, \"java.time\" package ek built-in package hai, jisme \"LocalDate\", \"LocalTime\", aur \"LocalDateTime\" classes hai.\n",
+        "example": "import java.time.LocalDate;\nimport java.time.LocalTime;\nimport java.time.LocalDateTime;\n\npublic class DateAndTimeExample {\n    public static void main(String[] args) {\n        LocalDate date = LocalDate.now();\n        LocalTime time = LocalTime.now();\n        LocalDateTime datetime = LocalDateTime.now();\n\n        System.out.println(\"Current Date: \" + date);\n        System.out.println(\"Current Time: \" + time);\n        System.out.println(\"Current Date and Time: \" + datetime);\n    }\n}",
+        "remcont": "🔴 Is example mein, \"LocalDate\", \"LocalTime\", aur \"LocalDateTime\" classes ka object banaya gaya hai, aur \"now()\" method call kiya gaya hai. Isse, current date aur time values access hote hai.\n\n🔴 Date and Time ke saath, programs ke behavior customize karne ke liye, different date aur time values access kar sakte hai.\n\n🔴 Date and Time ke use aise areas mein bahut useful hai jisme system ke through date aur time values se programs ke behavior customize karna ho, jaise scheduling, logging, etc.\n\n"
     },
     {
         "id": "44",
         "name": "ArrayList",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"ArrayList\" ek feature hai jisme dynamic array ka use kiya jata hai. Isse, elements ko add, remove, aur access karne mein help milta hai.\n\n🔴 ArrayList ke liye, \"java.util.ArrayList\" class ka use kiya jata hai. ArrayList class ek built-in class hai, jisme \"List\" interface ka implementation hai.\n",
+        "example": "import java.util.ArrayList;\n\npublic class ArrayListExample {\n    public static void main(String[] args) {\n        ArrayList<String> names = new ArrayList<>();\n\n        names.add(\"John\");\n        names.add(\"Alice\");\n        names.add(\"Bob\");\n\n        System.out.println(\"ArrayList: \" + names);\n\n        names.remove(1);\n\n        System.out.println(\"ArrayList after removing Alice: \" + names);\n\n        String firstName = names.get(0);\n\n        System.out.println(\"First name: \" + firstName);\n    }\n}",
+        "remcont": "🔴 Is example mein, \"ArrayList\" class ka object \"names\" banaya gaya hai, aur \"String\" data type ka use kiya gaya hai.\n\n🔴 \"add()\" method elements ko array mein add karta hai. \"remove()\" method elements ko array se remove karta hai. \"get()\" method elements ko array se access karta hai.\n\n🔴 ArrayList ke saath, elements ko add, remove, aur access karne mein help milta hai.\n\n🔴 ArrayList ke use aise areas mein bahut useful hai jisme dynamic array ka use karna ho, jaise data structures, collections, etc.\n\n"
     },
     {
         "id": "45",
         "name": "LinkedList",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"LinkedList\" ek feature hai jisme double linked list ka use kiya jata hai. Isse, elements ko add, remove, aur access karne mein help milta hai.\n\n🔴 LinkedList ke liye, \"java.util.LinkedList\" class ka use kiya jata hai. LinkedList class ek built-in class hai, jisme \"List\" interface ka implementation hai.\n",
+        "example": "import java.util.LinkedList;\n\npublic class LinkedListExample {\n    public static void main(String[] args) {\n        LinkedList<String> names = new LinkedList<>();\n\n        names.add(\"John\");\n        names.add(\"Alice\");\n        names.add(\"Bob\");\n\n        System.out.println(\"LinkedList: \" + names);\n\n        names.remove(1);\n\n        System.out.println(\"LinkedList after removing Alice: \" + names);\n\n        String firstName = names.get(0);\n\n        System.out.println(\"First name: \" + firstName);\n    }\n}",
+        "remcont": "🔴 Is example mein, \"LinkedList\" class ka object \"names\" banaya gaya hai, aur \"String\" data type ka use kiya gaya hai.\n\n🔴 \"add()\" method elements ko array mein add karta hai. \"remove()\" method elements ko array se remove karta hai. \"get()\" method elements ko array se access karta hai.\n\n🔴 LinkedList ke saath, elements ko add, remove, aur access karne mein help milta hai.\n\n🔴 LinkedList ke use aise areas mein bahut useful hai jisme double linked list ka use karna ho, jaise data structures, collections, etc.\n\n"
     },
     {
         "id": "46",
         "name": "HashMap",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"HashMap\" ek feature hai jisme key-value pairs ka use kiya jata hai. Isse, elements ko add, remove, aur access karne mein help milta hai.\n\n🔴 HashMap ke liye, \"java.util.HashMap\" class ka use kiya jata hai. HashMap class ek built-in class hai, jisme \"Map\" interface ka implementation hai.\n",
+        "example": "import java.util.HashMap;\n\npublic class HashMapExample {\n    public static void main(String[] args) {\n        HashMap<Integer, String> map = new HashMap<>();\n\n        map.put(1, \"John\");\n        map.put(2, \"Alice\");\n        map.put(3, \"Bob\");\n\n        System.out.println(\"HashMap: \" + map);\n\n        String value = map.get(2);\n\n        System.out.println(\"Value for key 2: \" + value);\n\n        map.remove(3);\n\n        System.out.println(\"HashMap after removing key 3: \" + map);\n    }\n}",
+        "remcont": "🔴 Is example mein, \"HashMap\" class ka object \"map\" banaya gaya hai, aur \"Integer\" aur \"String\" data type ka use kiya gaya hai.\n\n🔴 \"put()\" method elements ko key-value pairs mein add karta hai. \"get()\" method elements ko key se access karta hai. \"remove()\" method elements ko key se remove karta hai.\n\n🔴 HashMap ke saath, elements ko add, remove, aur access karne mein help milta hai.\n\n🔴 HashMap ke use aise areas mein bahut useful hai jisme key-value pairs ka use karna ho, jaise data structures, collections, etc.\n\n"
     },
     {
         "id": "47",
         "name": "HashSet",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"HashSet\" ek feature hai jisme hash table ka use kiya jata hai. Isse, unique elements ko store aur access karne mein help milta hai.\n\n🔴 HashSet ke liye, \"java.util.HashSet\" class ka use kiya jata hai. HashSet class ek built-in class hai, jisme \"Set\" interface ka implementation hai.\n",
+        "example": "import java.util.HashSet;\n\npublic class HashSetExample {\n    public static void main(String[] args) {\n        HashSet<Integer> set = new HashSet<>();\n\n        set.add(1);\n        set.add(2);\n        set.add(3);\n\n        System.out.println(\"HashSet: \" + set);\n\n        boolean contains = set.contains(2);\n\n        System.out.println(\"Does HashSet contain 2? \" + contains);\n\n        set.remove(3);\n\n        System.out.println(\"HashSet after removing 3: \" + set);\n    }\n}",
+        "remcont": "🔴 Is example mein, \"HashSet\" class ka object \"set\" banaya gaya hai, aur \"Integer\" data type ka use kiya gaya hai.\n\n🔴 \"add()\" method elements ko set mein add karta hai. \"contains()\" method check karta hai ki set mein element present hai ya nahi. \"remove()\" method elements ko set se remove karta hai.\n\n🔴 HashSet ke saath, unique elements ko store aur access karne mein help milta hai.\n\n🔴 HashSet ke use aise areas mein bahut useful hai jisme unique elements ko store karna ho, jaise data structures, collections, etc.\n\n"
     },
     {
         "id": "48",
         "name": "Iterator",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"Iterator\" ek feature hai jisme collections ke elements ko iterate karne ke liye use kiya jata hai. Isse, elements ko ek-ek access aur manipulate karne mein help milta hai.\n\n🔴 Iterator ke liye, \"java.util.Iterator\" interface ka use kiya jata hai. Iterator interface ek built-in interface hai, jisme \"hasNext()\", \"next()\", aur \"remove()\" methods hai.\n",
+        "example": "import java.util.ArrayList;\nimport java.util.Iterator;\n\npublic class IteratorExample {\n    public static void main(String[] args) {\n        ArrayList<Integer> list = new ArrayList<>();\n\n        list.add(1);\n        list.add(2);\n        list.add(3);\n\n        Iterator<Integer> iterator = list.iterator();\n\n        while (iterator.hasNext()) {\n            Integer next = iterator.next();\n\n            System.out.println(next);\n\n            if (next == 2) {\n                iterator.remove();\n            }\n        }\n\n        System.out.println(\"ArrayList after removing 2: \" + list);\n    }\n}",
+        "remcont": "🔴 Is example mein, \"ArrayList\" class ka object \"list\" banaya gaya hai, aur \"Integer\" data type ka use kiya gaya hai. \"iterator()\" method collections se iterator nikala jata hai.\n\n🔴 \"hasNext()\" method check karta hai ki iterator mein elements hai ya nahi. \"next()\" method elements ko iterator se ek-ek access karta hai. \"remove()\" method elements ko iterator se remove karta hai.\n\n🔴 Iterator ke saath, elements ko ek-ek access aur manipulate karne mein help milta hai.\n\n🔴 Iterator ke use aise areas mein bahut useful hai jisme collections ke elements ko iterate karna ho, jaise data structures, collections, etc.\n\n"
     },
     {
         "id": "49",
         "name": "finally block",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"finally block\" ek feature hai jisme code ko exception ke saath bhi execute karne ke liye ensure kiya jata hai. Isse, important code ko exception ke saath bhi execute karne mein help milta hai.\n\n🔴 Finally block, \"try-catch block\" ke baad use kiya jata hai. Finally block mein, exception ke saath bhi execute hona chahiye wala code likha jata hai.\n",
+        "example": "public class FinallyExample {\n    public static void main(String[] args) {\n        try {\n            int a = 10;\n            int b = 0;\n            int result = a / b;\n\n            System.out.println(result);\n        } catch (Exception e) {\n            System.out.println(\"Caught an exception: \" + e.getMessage());\n        } finally {\n            System.out.println(\"Finally block executed.\");\n        }\n    }\n}",
+        "remcont": "🔴 Is example mein, \"try block\" mein exception prone code hai. \"catch block\" exception handle karne ke liye use kiya gaya hai. \"finally block\" important code hai jisse, exception ke saath bhi execute hona chahiye.\n\n🔴 Finally block ke saath, exception ke saath bhi important code ko execute karne mein help milta hai.\n\n🔴 Finally block ke use aise areas mein bahut useful hai jisme important code ko exception ke saath bhi execute karna ho, jaise file handling, network programming, etc.\n\n"
     },
     {
         "id": "50",
         "name": "throw keyword",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"throw keyword\" ek feature hai jo developer ko exception throw karne mein help karta hai. Isse, custom exception create aur throw karne mein help milta hai.\n\n🔴 Throw keyword, \"try-catch block\" ke baahar use kiya jata hai. Throw keyword se, exception create aur throw karne ke liye use kiya jata hai.\n",
+        "example": "public class ThrowKeywordExample {\n    static void validate(int age) throws Exception {\n        if (age < 18) {\n            throw new Exception(\"Age is less than 18\");\n        } else {\n            System.out.println(\"Welcome to vote\");\n        }\n    }\n\n    public static void main(String[] args) {\n        try {\n            validate(16);\n        } catch (Exception e) {\n            System.out.println(\"Caught an exception: \" + e.getMessage());\n        }\n    }\n}",
+        "remcont": "🔴 Is example mein, \"validate()\" method custom exception create aur throw karta hai. \"throw keyword\" se, custom exception create aur throw kiya gaya hai.\n\nThrow keyword ke saath, custom exception create aur throw karne mein help milta hai.\n\n🔴 Throw keyword ke use aise areas mein bahut useful hai jisme custom exception create aur throw karna ho, jaise data validation, file handling, network programming, etc.\n\n"
     },
     {
         "id": "51",
         "name": "File Handling",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"File Handling\" ek feature hai jisme file ko read, write aur manipulate karne ke liye use kiya jata hai. Isse, data ko file mein store aur retrieve karne mein help milta hai.\n\n🔴 File handling ke liye, \"java.io\" package ka use kiya jata hai. \"File\" class ek built-in class hai, jisme file ko manipulate karne ke liye methods hai.\n",
+        "example": "import java.io.File;\nimport java.io.FileNotFoundException;\nimport java.util.Scanner;\n\npublic class FileHandlingExample {\n    public static void main(String[] args) {\n        File file = new File(\"example.txt\");\n\n        try {\n            Scanner scanner = new Scanner(file);\n\n            while (scanner.hasNext()) {\n                System.out.println(scanner.nextLine());\n            }\n\n            scanner.close();\n        } catch (FileNotFoundException e) {\n            System.out.println(\"File not found: \" + e.getMessage());\n        }\n    }\n}",
+        "remcont": "🔴 Is example mein, \"File\" class ka object \"file\" banaya gaya hai, aur \"example.txt\" file ko represent karta hai. \"Scanner\" class ka object \"scanner\" banaya gaya hai, aur file ko \"scanner\" se read kiya gaya hai.\n\n🔴 File handling ke saath, data ko file mein store aur retrieve karne mein help milta hai.\n\n🔴 File handling ke use aise areas mein bahut useful hai jisme file ko manipulate karna ho, jaise data storage, configuration files, log files, etc.\n\n"
     },
     {
         "id": "52",
         "name": "Create / Write File",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"Create/Write File\" ek feature hai jisme file ko create aur write karne ke liye use kiya jata hai. Isse, data ko file mein store karne mein help milta hai.\n\n🔴 Create/Write File ke liye, \"java.io\" package ka use kiya jata hai. \"FileWriter\" class ek built-in class hai, jisme file ko create aur write karne ke liye methods hai.\n\n🔴 Ek basic example dikhata hai jisme file ko create aur write karne ke liye use kiya gaya hai:\n",
+        "example": "import java.io.FileWriter;\nimport java.io.IOException;\n\npublic class CreateWriteFileExample {\n    public static void main(String[] args) {\n        FileWriter writer = null;\n\n        try {\n            writer = new FileWriter(\"example.txt\");\n\n            writer.write(\"Hello, World!\");\n            writer.write(\"\\nThis is a test file.\");\n\n            System.out.println(\"File written successfully.\");\n        } catch (IOException e) {\n            System.out.println(\"Error writing to file: \" + e.getMessage());\n        } finally {\n            try {\n                if (writer != null) {\n                    writer.close();\n                }\n            } catch (IOException e) {\n                System.out.println(\"Error closing writer: \" + e.getMessage());\n            }\n        }\n    }\n}",
+        "remcont": "🔴 Is example mein, \"FileWriter\" class ka object \"writer\" banaya gaya hai, aur \"example.txt\" file ko create aur write karne ke liye use kiya gaya hai.\n\n🔴 Create/Write File ke saath, data ko file mein store karne mein help milta hai.\n\n🔴 Create/Write File ke use aise areas mein bahut useful hai jisme data ko file mein store karna ho, jaise data storage, configuration files, log files, etc.\n\n"
     },
     {
         "id": "53",
         "name": "Read File",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 In Java, \"Read File\" ek feature hai jisme file ko read karne ke liye use kiya jata hai. Isse, data ko file se retrieve karne mein help milta hai.\n\n🔴 Read File ke liye, \"java.io\" package ka use kiya jata hai. \"FileReader\" class ek built-in class hai, jisme file ko read karne ke liye methods hai.\n\n🔴 Ek basic example dikhata hai jisme file ko read karne ke liye use kiya gaya hai:\n",
+        "example": "import java.io.FileReader;\nimport java.io.IOException;\n\npublic class ReadFileExample {\n    public static void main(String[] args) {\n        FileReader reader = null;\n\n        try {\n            reader = new FileReader(\"example.txt\");\n\n            int data = reader.read();\n\n            while (data != -1) {\n                System.out.print((char) data);\n                data = reader.read();\n            }\n\n            System.out.println(\"File read successfully.\");\n        } catch (IOException e) {\n            System.out.println(\"Error reading file: \" + e.getMessage());\n        } finally {\n            try {\n                if (reader != null) {\n                    reader.close();\n                }\n            } catch (IOException e) {\n                System.out.println(\"Error closing reader: \" + e.getMessage());\n            }\n        }\n    }\n}",
+        "remcont": "🔴 Is example mein, \"FileReader\" class ka object \"reader\" banaya gaya hai, aur \"example.txt\" file ko read karne ke liye use kiya gaya hai.\n\n🔴 Read File ke saath, data ko file se retrieve karne mein help milta hai.\n\n🔴 Read File ke use aise areas mein bahut useful hai jisme data ko file se retrieve karna hai, jaise data storage, configuration files, log files, etc.\n\n"
     }
     
 ]
