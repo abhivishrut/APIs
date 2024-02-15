@@ -1,1 +1,62 @@
-
+[
+    {
+        "id": "1",
+        "image":"https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/C/Right%20Half%20Pyramid.PNG",
+        "name": "Right Half Pyramid Pattern in C",
+        "message": "// C program to print right half pyramid pattern of star \n#include <stdio.h> \n\nint main() \n{ \n    int rows = 5; \n\n    // first loop for printing rows \n    for (int i = 0; i < rows; i++) { \n\n        // second loop for printing character in each rows \n        for (int j = 0; j <= i; j++) { \n            printf(\"* \"); \n        } \n        printf(\"\\n\"); \n    } \n    return 0; \n}"
+    },
+    {
+        "id": "2",
+        "image":"",
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": "3",
+        "image":"",
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": "4",
+        "image":"",
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": "5",
+        "image":"",
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": "6",
+        "image":"",
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": "7",
+        "image":"",
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": "8",
+        "image":"",
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": "9",
+        "image":"",
+        "name": "",
+        "message": ""
+    },
+    {
+        "id": "10",
+        "image":"",
+        "name": "",
+        "message": ""
+    }
+]
