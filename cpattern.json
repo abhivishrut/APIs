@@ -3,6 +3,6 @@
         "id": "1",
         "image":"https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/C/Right%20Half%20Pyramid.PNG",
         "name": "Right Half Pyramid Pattern in C",
-        "message": "#include <stdio.h> \n\nint main() \n{ \n    int rows = 5; \n\n    // first loop for printing rows \n    for (int i = 0; i < rows; i++) { \n\n        // second loop for printing character in each rows \n        for (int j = 0; j <= i; j++) { \n            printf(\"* \"); \n        } \n        printf(\"\\n\"); \n    } \n    return 0; \n}"
+        "message": "#include <stdio.h> \n\nint main() \n{ \n    int rows = 5; \n\n    // first loop for printing rows \n    for (int i = 0; i < rows; i++) { \n\n        // second loop for printing character in each rows \n        for (int j = 0; j <= i; j++) { \n            printf(\"* \"); \n        } \n        printf(\"\\n\"); \n    } \n    return 0; \n}\n\n#include <stdio.h> \n\nint main() \n{ \n    int rows = 5; \n\n    // first loop for printing rows \n    for (int i = 0; i < rows; i++) { \n\n        // second loop for printing character in each rows \n        for (int j = 0; j <= i; j++) { \n            printf(\"* \"); \n        } \n        printf(\"\\n\"); \n    } \n    return 0; \n}"
     }
 ]
