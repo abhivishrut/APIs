@@ -1,1 +1,148 @@
+[
+    {
+        "id": "1",
+        "name": "What is C programming language?",
+        "message": "C is a general-purpose, procedural programming language developed by Dennis Ritchie at Bell Labs in 1972. It is widely used for system and application software development."
+    },
+    {
+        "id": "2",
+        "name": "What are the key features of C programming language?",
+        "message": "C is a structured programming language known for its simplicity, portability, and efficiency. It provides low-level access to memory, a rich set of operators, and a versatile set of data types."
+    },
+    {
+        "id": "3",
+        "name": "What is the difference between 'scanf()' and 'printf()' functions in C?",
+        "message": "scanf() is used for reading input from the standard input (keyboard), while printf() is used for displaying output to the standard output (console)."
+    },
+    {
+        "id": "4",
+        "name": "Explain the difference between 'int main()' and 'void main()' in C.",
+        "message": "int main() is the standard form of the main function in C, which returns an integer value to the operating system upon program completion. void main() is non-standard and should be avoided as it may produce unpredictable behavior."
+    },
+    {
+        "id": "5",
+        "name": "What is a pointer in C?",
+        "message": "A pointer is a variable that stores the memory address of another variable. It allows indirect access to the memory location, enabling dynamic memory allocation and manipulation of data structures."
+    },
+    {
+        "id": "6",
+        "name": "What is the difference between 'malloc()' and 'calloc()' functions in C?",
+        "message": "Both malloc() and calloc() are used for dynamic memory allocation. The key difference is that malloc() allocates uninitialized memory, while calloc() allocates zero-initialized memory."
+    },
+    {
+        "id": "7",
+        "name": "Explain the 'static' keyword in C.",
+        "message": "The static keyword in C is used to declare variables and functions with a local scope, meaning they retain their values between function calls. It can also be used to control the visibility of variables and functions within a file."
+    },
+    {
+        "id": "8",
+        "name": "What is the 'sizeof()' operator in C?",
+        "message": "The sizeof() operator in C is used to determine the size of a variable or data type in bytes. It is commonly used in dynamic memory allocation and to ensure portability across different platforms."
+    },
+    {
+        "id": "9",
+        "name": "What is the purpose of the 'typedef' keyword in C?",
+        "message": "The typedef keyword in C is used to create an alias or alternative name for a data type. It allows programmers to define custom data types that improve code readability and maintainability."
+    },
+    {
+        "id": "10",
+        "name": "Explain the difference between '==', '=', and '===' in C.",
+        "message": "1. == is the equality operator used to compare two values for equality.\n\n2. = is the assignment operator used to assign a value to a variable.\n\n3. === does not exist in C; it is used in other programming languages like JavaScript for strict equality comparison."
+    },
+    {
+        "id": "11",
+        "name": "What is a structure in C?",
+        "message": "A structure in C is a composite data type that allows you to group together variables of different data types under a single name. It is used to represent a record or entity that may contain multiple fields."
+    },
+    {
+        "id": "12",
+        "name": "Explain the difference between 'struct' and 'union' in C.",
+        "message": "1. A struct in C is a collection of variables of different data types stored in memory sequentially. Each variable within a struct has its own memory location.\n\n2. A union in C is similar to a struct but uses the same memory location for all its members. This means that only one member of the union can be accessed at a time."
+    },
+    {
+        "id": "13",
+        "name": "What are pointers to functions in C?",
+        "message": "Pointers to functions in C are variables that store the memory addresses of functions. They allow for dynamic function calls and can be passed as arguments to other functions."
+    },
+    {
+        "id": "14",
+        "name": "Explain the concept of dynamic memory allocation in C.",
+        "message": "Dynamic memory allocation in C refers to the process of allocating memory at runtime using functions like malloc(), calloc(), and realloc(). This allows for the creation of data structures whose size is not known at compile time."
+    },
+    {
+        "id": "15",
+        "name": "What are function pointers in C?",
+        "message": "Function pointers in C are pointers that store the memory addresses of functions. They enable the indirect invocation of functions, which is useful for implementing callbacks and dynamic function dispatching."
+    },
+    {
+        "id": "16",
+        "name": "Explain the concept of file handling in C.",
+        "message": "File handling in C involves performing operations on files, such as reading from or writing to them. This is achieved using file pointers and functions like fopen(), fclose(), fread(), fwrite(), etc."
+    },
+    {
+        "id": "17",
+        "name": "What are preprocessor directives in C?",
+        "message": "Preprocessor directives in C are commands that are processed by the preprocessor before compilation. They are used to include header files (#include), define macros (#define), conditionally compile code (#ifdef, #ifndef, #endif), etc."
+    },
+    {
+        "id": "18",
+        "name": "What is the difference between 'malloc()' and 'realloc()' functions in C?",
+        "message": "malloc() is used to allocate memory dynamically, while realloc() is used to resize dynamically allocated memory blocks. If the block's size is increased, realloc() may allocate a new memory block and copy the existing data into it."
+    },
+    {
+        "id": "19",
+        "name": "Explain the concept of bitwise operators in C.",
+        "message": "Bitwise operators in C are used to perform operations at the bit level. They include AND (&), OR (|), XOR (^), complement (~), left shift (<<), and right shift (>>). These operators are commonly used for manipulating individual bits within integers and implementing efficient algorithms."
+    },
+    {
+        "id": "20",
+        "name": "What are function prototypes in C?",
+        "message": "Function prototypes in C provide a declaration of the function before its actual implementation. They specify the function's name, return type, and parameter types, allowing the compiler to perform type checking and ensure correct function usage."
+    },
+    {
+        "id": "21",
+        "name": "Explain the concept of memory leaks in C.",
+        "message": "Memory leaks in C occur when dynamically allocated memory is not properly deallocated after use. This leads to a gradual depletion of available memory, potentially causing the program to crash or degrade in performance over time."
+    },
+    {
+        "id": "22",
+        "name": "What is the difference between 'static' and 'dynamic' memory allocation in C?",
+        "message": "Static memory allocation in C involves allocating memory for variables at compile time, and the memory size is fixed throughout the program's execution. Dynamic memory allocation, on the other hand, allows for memory allocation at runtime using functions like malloc(), calloc(), and realloc()."
+    },
+    {
+        "id": "23",
+        "name": "Explain the concept of 'const' keyword in C.",
+        "message": "The const keyword in C is used to declare constants, variables whose values cannot be modified once assigned. It is also used to specify that a function does not modify its parameters, helping to enforce immutability and improve code readability."
+    },
+    {
+        "id": "24",
+        "name": "What are the differences between 'break' and 'continue' statements in C?",
+        "message": "1. The break statement in C is used to exit a loop prematurely, terminating the loop's execution and continuing with the next statement after the loop.\n\n2. The continue statement, on the other hand, is used to skip the remaining code within a loop iteration and proceed to the next iteration."
+    },
+    {
+        "id": "25",
+        "name": "Explain the concept of 'volatile' keyword in C.",
+        "message": "The volatile keyword in C is used to indicate that a variable's value may change unexpectedly, typically due to external factors such as hardware interrupts or multi-threading. It informs the compiler not to optimize access to the variable and always read from memory."
+    },
+    {
+        "id": "26",
+        "name": "What are function macros in C?",
+        "message": "Function macros in C are preprocessor directives that define shorthand notations for frequently used code snippets. They are defined using the #define directive and are replaced with their corresponding code during preprocessing."
+    },
+    {
+        "id": "27",
+        "name": "Explain the purpose of 'sizeof' operator in C.",
+        "message": "The sizeof operator in C is used to determine the size, in bytes, of a data type or a variable. It returns the number of bytes required to store the specified type or object, allowing for dynamic memory allocation and array manipulation."
+    },
+    {
+        "id": "28",
+        "name": "What is the purpose of 'enum' data type in C?",
+        "message": "The enum data type in C is used to define a set of named constants, known as enumerators, that represent integer values. It provides a more descriptive and readable way to work with integer constants, improving code clarity and maintainability."
+    },
+    {
+        "id": "29",
+        "name": "Explain the concept of 'recursion' versus 'iteration' in C.",
+        "message": "Recursion in C involves a function calling itself directly or indirectly to solve a problem by breaking it down into smaller instances of the same problem. Iteration, on the other hand, involves using loop constructs (such as for, while, or do-while) to repeatedly execute a block of code until a condition is met. Both recursion and iteration are used for repetitive tasks, but they differ in their approach and implementation."
+    }
+]
 
