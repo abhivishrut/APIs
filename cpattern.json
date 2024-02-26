@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "image":"https://drive.google.com/file/d/1K2kyjhKybtPbSB0MhwJnSiAaNDXzvT_h/view?usp=sharing",
+        "image":"https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/C/right_half_pyramid.jpg",
         "name": "Right Half Pyramid Pattern in C",
         "message": "#include <stdio.h> \n\nint main() \n{ \n    int rows = 5; \n\n    // first loop for printing rows \n    for (int i = 0; i < rows; i++) { \n\n        // second loop for printing character in each rows \n        for (int j = 0; j <= i; j++) { \n            printf(\"* \"); \n        } \n        printf(\"\\n\"); \n    } \n    return 0; \n}"
     }
