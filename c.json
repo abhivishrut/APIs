@@ -2,7 +2,7 @@
         {
         "id": 1,
         "name": "What is C ?",
-        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/C/retina_1708x683_cover-0828_AfterAllTheseYearstheWorldisStillPoweredbyCProgramming_Razvan_Newsletter-2b9ea38294bb08c5aea1f0c1cb06732f.png",
+        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/C/Topics/1.png",
         "message":"🔴 C ek programming language hai jo \"Dennis Ritchie\" ne 1972 mein \"Bell Labs\" mein create kiya tha. C programming language \"Unix\" operating system ke development mein istemal kiya gaya tha. C ek high-level aur procedural programming language hai jisme code machine-level ke commands ke through translate kiya jata hai.\n\n🔴 C programming language mein, code \"C compiler\" ke through \"machine code\" mein translate kiya jata hai. Isse, C programming language ke programs very fast aur efficient chalte hai.\n\n🔴 C programming language mein, variable, functions, loops, conditionals aur arrays ke through programming kiya jata hai. C programming language mein, memory ko direct access karne ke liye bhi allow kiya jata hai.\n\n",
         "example":"0",
         "remcont":"🔴 C programming language ek standard programming language hai jo \"ANSI C\" aur \"ISO C\" ke through standardize kiya gaya hai. Isliye, C programming language ko bahut saare platforms par support karna possible hai.\n\n🔴 C programming language mein, bahut saare popular libraries aur frameworks hai jo bahut saare areas mein use kiye jate hai, jaise game development, embedded systems, device drivers, etc.\n\n"
@@ -10,6 +10,7 @@
         {
             "id": 2,
             "name": "How To Install C",
+            "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/C/Topics/2.png",
             "message":"~For Windows:\n\n📌~1: Download \"Cygwin\" or \"MinGW\" software from their official websites.\n\n📌~2: Install the software by following the installation wizard.\n\n📌~3: Open the software and type \"gcc\" in the terminal to check if C compiler is installed properly.\n\n📌~4: Write your C code in a text editor and save it with a \".c\" extension.\n\n📌~5: Compile your C code using the \"gcc\" compiler in the terminal.\n\n📌~6: Run your compiled C code using the \"./a.out\" command in the terminal.\n\n",
         "example":"0",
         "remcont":"0"
@@ -17,6 +18,7 @@
         {
             "id":"3",
             "name":"Syntax in C programming",
+            "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/C/Topics/3.png",
             "message":"🔴 Yahan ek basic C program ka example diya gaya hai jismein printf function ka use kiya gaya hai:\n",
         "example":"#include <stdio.h>\n\nint main() {\n    printf(\"Abhivishrut, is here!\\n\");\n    return 0;\n}",
         "remcont":"🔴 Is example mein, #include preprocessor directive ka use kiya gaya hai jismein stdio.h library ko include kara gaya hai. main function ke body mein, printf function ka use kiya gaya hai jisme \"Abhivishrut, is here!\" print kiya gaya hai.\n\n"
@@ -24,6 +26,7 @@
         {
             "id": 4,
             "name": "Variables in C",
+            "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/C/Topics/4.png",
             "message":"🔴 In C programming, variables ek storage location hain jo data ko store karta hai. Variables ke liye, pehle data type specify karna necessary hai, phir variable name specify karna hai. Jaise ki, 'int a;' aur 'float b;' ke saath, 'a' variable ko integer data type mein aur 'b' variable ko float data type mein declare kiya gaya hai.\n\nVariables ke saath, kuch rules follow karna necessary hai:\n\n📌~1: Variable name ka shuruat alphabet ya underscore ke saath hona chahiye.\n\n📌~2: Variable name mein, number, alphabet, aur underscore ke alawa koi bhi character nahi shamil ho sakta.\n\n📌~3: Variable name mein, same name ka do bar use nahi kiya jata.\n\n📌~4: Variable name mein, keyword use nahi kiya jata.\n\n📌~5: Variable name mein, case sensitive hota hai.\n\n📌~6: Variable ko initialize karne ke liye, initialize keyword ka use kiya jata hai, jaise ki 'int a = 10;'.\n\nYahan ek basic C program ka example diya gaya hai jismein int aur float data type ke variables ka use kiya gaya hai:\n",
         "example":"#include <stdio.h>\n\nint main() {\n    int a = 10;\n    float b = 20.5;\n\n    printf(\"Value of a is: %d\\n\", a);\n    printf(\"Value of b is: %f\\n\", b);\n\n    return 0;\n}",
         "remcont":"🔴 Is example mein, 'int' aur 'float' data type ke variables 'a' aur 'b' ko define kiya gaya hai aur initialize kiya gaya hai '10' aur '20.5' values ke saath. Aur, 'printf' function ka use kiya gaya hai jismein variable ke values print kiye gaye hain."
@@ -31,6 +34,7 @@
         {
             "id": 5,
             "name": "Constant Variables",
+            "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/C/Topics/1.png",
             "message":"🔴 Constant Variables kehte hain jinmein value change nahi kar sakte. Constant Variables ko declare karne ke liye, const keyword ka use kiya jata hai.\n",
         "example":"const int MAX_SIZE = 100;",
         "remcont":"🔴 Is example mein, MAX_SIZE variable ko const keyword se declare kiya gaya hai, isliye value change nahi kar sakta.\n\n"
