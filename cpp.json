@@ -9,23 +9,23 @@
     {
         "id": "2",
         "name": "Installation",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ ke liye aapko ek compiler ki zarurat hoti hai. Windows par, MinGW (Minimalist GNU for Windows) ek popular option hai. Niche diye gaye steps ko follow karein:\n\n📌~MinGW Download Karein: Sabse pehle, aapko MinGW ki official website par jaana hoga aur wahan se MinGW ka installer download karna hoga.\n\n📌~MinGW Install Karein: Download hone ke baad, installer ko run karein aur instructions follow karte hue MinGW ko install karein. Default settings par hi rehne dein.\n\n📌~Environment Variables Set Karein: MinGW install karne ke baad, aapko apne system ke environment variables me MinGW directory ko add karna hoga. Iske liye, System Properties > Advanced > Environment Variables par jaayein, aur ‘Path’ variable me MinGW directory ka path add karein.\n\n📌~Verify Karein: Installation verify karne ke liye, Command Prompt open karein aur g++ --version likh kar enter press karein. Agar aapko g++ ka version dikhai de raha hai, toh matlab hai ki MinGW sahi se install ho gaya hai.\n\n🔴 Ab aap apne system par C++ programs likh sakte hain aur unhe compile kar sakte hain.",
+        "example": "0",
+        "remcont": "0"
     },
     {
         "id": "3",
         "name": "Syntax",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ ka syntax bahut simple hai. Niche maine kuch basic syntax elements ko explain kiya hai:\n\n📌~Variables: Variables data store karne ke liye use hote hain. Har variable ka ek type hota hai, jaise int (integer), float (floating point number), char (character), etc. Variable declare karne ke liye, pehle uska type likha jata hai, phir uska naam. Jaise, int myVar;.\n\n📌~Functions: Functions ek group of statements hote hain jo ek specific task perform karte hain. Function declare karne ke liye, pehle uska return type likha jata hai, phir uska naam, aur phir parentheses (). Jaise, void myFunction() { /* code */ }.\n\n📌~Loops: Loops ek sequence of statements ko bar bar execute karne ke liye use hote hain. C++ me teen types ke loops hote hain: for, while, aur do...while.\n\n📌~Conditionals: Conditionals ek specific condition ke basis par different code blocks execute karne ke liye use hote hain. C++ me if, else if, aur else statements use kiye jate hain conditions check karne ke liye.\n\n📌~Classes and Objects: C++ ek object-oriented programming language hai, isliye isme classes aur objects ka use hota hai. Class ek blueprint hoti hai jisme methods aur variables define kiye jate hain. Object class ka instance hota hai.",
+        "example": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello, AbhiVishrut is here!\";\n    return 0;\n}",
+        "remcont": "Yeh tha C++ ka basic syntax.\n\n📌~#include <iostream>: Ye line iostream library ko include karti hai jo input-output operations ke liye use hoti hai.\n\n📌~int main(): Ye main function hai jahan se program start hota hai.\n\n📌~std::cout << \"Hello, AbhiVishrut is here!\";: Ye line console par “Hello, World!” print karti hai.\n\n📌~return 0;: Ye line program ke end par 0 return karti hai, jo program successfully run ho gaya hai iska indication hota hai.\n\nI hope ye example helpful hoga."
     },
     {
         "id": "4",
         "name": "Run First Program",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 Sure, niche maine C++ me “Hello, World!” program likhne aur run karne ke steps diye hain:\n\n📌~C++ Program Likho: Sabse pehle, aapko ek text editor (jaise Notepad, Sublime Text, ya Visual Studio Code) me C++ program likhna hoga. Niche ek basic “Hello, World!” program ka example diya gaya hai:",
+        "example": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello, World!\";\n    return 0;\n}\n",
+        "remcont": "📌~Program Save Karein: Program likhne ke baad, use .cpp extension ke sath save karein. Jaise, hello_world.cpp.\n\n📌~Program Compile Karein: Ab, Command Prompt ya Terminal open karein, aur jahan aapne apna program save kiya hai, wahan jaayein. Fir, g++ hello_world.cpp -o hello_world command type karein aur Enter press karein. Ye command aapke program ko compile karegi aur ek executable file generate karegi jiska naam hello_world hoga.\n\n📌~Program Run Karein: Program run karne ke liye, ./hello_world command type karein aur Enter press karein. Aapko “Hello, World!” output dikhega.\n\nYe tha C++ me pehla program likhne aur run karne ka tarika."
     },
     {
         "id": "5",
