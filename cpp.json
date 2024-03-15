@@ -58,30 +58,30 @@
     {
         "id": "9",
         "name": "Operators",
-        "message": "🔴 C++ me kai tarah ke operators hote hain jo different operations perform karte hain. Niche maine kuch basic operators ke examples diye hain:\n\nArithmetic Operators: Ye basic mathematical operations perform karte hain.\n\nAssignment Operators: Ye variables ko values assign karte hain.\n\nComparison Operators: Ye two values ko compare karte hain aur ek boolean (true ya false) value return karte hain.\n\nLogical Operators: Ye logical operations (AND, OR, NOT) perform karte hain.",
+        "message": "🔴 C++ me kai tarah ke operators hote hain jo different operations perform karte hain. Niche maine kuch basic operators ke examples diye hain:\n\n📌~Arithmetic Operators: Ye basic mathematical operations perform karte hain.\n\n📌~Assignment Operators: Ye variables ko values assign karte hain.\n\n📌~Comparison Operators: Ye two values ko compare karte hain aur ek boolean (true ya false) value return karte hain.\n\n📌~Logical Operators: Ye logical operations (AND, OR, NOT) perform karte hain.",
         "example": "//Arithmetic Operators\nint x = 5;\nint y = 2;\nint z = x + y; // Addition\nz = x - y; // Subtraction\nz = x * y; // Multiplication\nz = x / y; // Division\nz = x % y; // Modulus (remainder of division)\n\n//Assignment Operators\nint x = 5; // '=' is an assignment operator\n\n//Comparison Operators\nint x = 5;\nint y = 2;\nboolean z;\n\nz = (x == y); // Equal to\nz = (x != y); // Not equal to\nz = (x > y); // Greater than\nz = (x < y); // Less than\nz = (x >= y); // Greater than or equal to\nz = (x <= y); // Less than or equal to\n\n//Logical Operators\nbool x = true;\nbool y = false;\nbool z = x && y; // Logical AND\nz = x || y; // Logical OR\nz = !x; // Logical NOT",
-        "remcont": "Ye the C++ ke kuch basic operators. Har ek operator ka apna ek specific use hota hai, aur ye depend karta hai ki aap kis tarah ka operation perform karna chahte hain."
+        "remcont": "🔴 Ye the C++ ke kuch basic operators. Har ek operator ka apna ek specific use hota hai, aur ye depend karta hai ki aap kis tarah ka operation perform karna chahte hain."
     },
     {
         "id": "10",
         "name": "String",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me strings ko std::string class ka use karke declare kiya jata hai. Yahan kuch examples diye gaye hain:\n\n📌~String Declare Karein: Sabse pehle, aapko ek string variable declare karna hoga.\n\n📌~String Concatenate Karein: Do strings ko jodne (concatenate) ke liye, aap + operator ka use kar sakte hain.\n\n📌~String Length Nikalein: String ki length nikalne ke liye, aap length() function ka use kar sakte hain.\n\n📌~String Access Karein: String ke specific character ko access karne ke liye, aap square brackets [] ka use kar sakte hain.",
+        "example": "//String Declare Karein\nstd::string myVar = \"Hello, World!\";\n\n//String Concatenate Karein\nstd::string str1 = \"Hello, \";\nstd::string str2 = \"World!\";\nstd::string str3 = str1 + str2; // \"Hello, World!\"\n\n//String Length Nikalein\nstd::string myVar = \"Hello, World!\";\nint len = myVar.length(); // 13\n\n//String Access Karein\nstd::string myVar = \"Hello, World!\";\nchar ch = myVar[0]; // 'H'",
+        "remcont": "0"
     },
     {
         "id": "11",
         "name": "User Input",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me user se input lene ke liye std::cin ka use kiya jata hai. Yahan kuch examples diye gaye hain:\n\n📌~Integer Input: User se ek integer input lene ke liye, aap std::cin ka use kar sakte hain.\n\n📌~String Input: User se ek string input lene ke liye, aap std::getline() function ka use kar sakte hain.Multiple Inputs: User se multiple inputs lene ke liye, aap std::cin ka use kar sakte hain.\n\n",
+        "example": "//Integer Input\nint myVar;\nstd::cout << \"Ek number daalein: \";\nstd::cin >> myVar;\nstd::cout << \"Aapne daala: \" << myVar;\n\n//String Input\nstd::string myVar;\nstd::cout << \"Kuch likhiye: \";\nstd::getline(std::cin, myVar);\nstd::cout << \"Aapne likha: \" << myVar;\n\n//Multiple Inputs\nint var1, var2;\nstd::cout << \"Do numbers daalein: \";\nstd::cin >> var1 >> var2;\nstd::cout << \"Aapne daale: \" << var1 << \" and \" << var2;",
+        "remcont": "🔴 Ye the C++ me user input lene ke kuch basic tarike."
     },
     {
         "id": "12",
         "name": "if else",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me if else statements conditions check karne ke liye use kiye jate hain. Yahan kuch examples diye gaye hain:\n\n📌~If Statement: if statement ek condition check karta hai, aur agar wo condition true hoti hai toh uske andar ka code execute hota hai.\n\n📌~Else Statement: else statement tab use hota hai jab if condition false hoti hai.\n\n📌~Else If Statement: else if statement tab use hoti hai jab aapko multiple conditions check karni hoti hain.",
+        "example": "//If Statement\nint x = 5;\nif (x > 0) {\n    std::cout << \"x is positive\";\n}\n\n//Else Statement\n\nint x = -5;\nif (x > 0) {\n    std::cout << \"x is positive\";\n} else {\n    std::cout << \"x is not positive\";\n}\n\n//Else If Statement\nint x = 0;\nif (x > 0) {\n    std::cout << \"x is positive\";\n} else if (x < 0) {\n    std::cout << \"x is negative\";\n} else {\n    std::cout << \"x is zero\";\n}",
+        "remcont": "🔴 Ye the C++ me if else statements ke kuch basic examples."
     },
     {
         "id": "13",
