@@ -86,244 +86,246 @@
     {
         "id": "13",
         "name": "while Loop",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me while loop ek tarah ka control flow statement hai jo ek block of code ko bar bar execute karta hai jab tak ki ek specific condition true hoti hai. Yahan ek example diya gaya hai:",
+        "example": "int i = 0;\nwhile (i < 5) {\n    std::cout << i;\n    i++;\n}",
+        "remcont": "🔴 Isme, loop i < 5 condition true hoti hai tab tak chalta hai, aur har iteration me i ki value 1 se badh jati hai. Iska output hoga 01234.\n\n🔴 Ye tha C++ me while loop ka ek basic example."
     },
     {
         "id": "14",
         "name": "do while Loop",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me do while loop ek variant hai while loop ka jo kam se kam ek baar toh code execute karta hi hai, fir condition check karta hai. Yahan ek example diya gaya hai:",
+        "example": "int i = 0;\n do {\n     std::cout << i;\n     i++;\n } while (i < 5);",
+        "remcont": "🔴 Isme, loop pehle std::cout << i; aur i++; lines ko execute karta hai, fir i < 5 condition check karta hai. Agar condition true hoti hai, toh loop fir se run hota hai. Iska output hoga 01234.\n\n🔴 Ye tha C++ me do while loop ka ek basic example."
     },
     {
         "id": "15",
         "name": "for Loop",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me for loop ek tarah ka control flow statement hai jo ek block of code ko specific number of times execute karta hai. Yahan ek example diya gaya hai:",
+        "example": "for (int i = 0; i < 5; i++) {\n    std::cout << i;\n}",
+        "remcont": "Isme, for loop ke three parts hote hain:\n\n📌~Initialization: Yahan int i = 0; hai. Ye sirf ek baar execute hota hai jab loop start hota hai.\n\n📌~Condition: Yahan i < 5 hai. Ye condition har iteration ke pehle check hoti hai. Agar ye condition true hoti hai, toh loop ke andar ka code execute hota hai. Agar ye condition false hoti hai, toh loop stop ho jata hai.\n\n📌~Increment: Yahan i++ hai. Ye statement har iteration ke baad execute hoti hai.\n\nIska output hoga 01234.\n\nYe tha C++ me for loop ka ek basic example."
     },
     {
         "id": "16",
         "name": "continue Statement",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me continue statement loop ke current iteration ko skip karne ke liye use kiya jata hai, aur control ko loop ke next iteration par transfer kar deta hai. Yahan ek example diya gaya hai:\n\n",
+        "example": "for (int i = 0; i < 10; i++) {\n    if (i == 5) {\n        continue;\n    }\n    std::cout << i << \"\\n\";\n}",
+        "remcont": "🔴 Isme, jab i ki value 5 hoti hai, toh continue statement execute hota hai, aur loop ka baaki ka code skip ho jata hai. Isliye, output me 5 print nahi hota. Baki sab numbers (0 se 4 aur 6 se 9) print hote hain.\n\n🔴 Ye tha C++ me continue statement ka ek basic example."
     },
     {
         "id": "17",
         "name": "break Statement",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me break statement loop ya switch statement se bahar nikalne ke liye use kiya jata hai. Yahan ek example diya gaya hai:",
+        "example": "#include <iostream>\n\nint main() {\n    for (int i = 0; i < 10; i++) {\n        if (i == 5) {\n            break;\n        }\n        std::cout << i << \"\\n\";\n    }\n    return 0;\n}",
+        "remcont": "🔴 Isme, jab i ki value 5 hoti hai, toh break statement execute hota hai, aur loop turant hi stop ho jata hai. Isliye, output me sirf 0 se 4 tak ke numbers print hote hain.\n\n🔴 Ye tha C++ me break statement ka ek basic example."
     },
     {
         "id": "18",
         "name": "switch Loop",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me switch statement multiple conditions check karne ke liye use kiya jata hai. Yahan ek example diya gaya hai:",
+        "example": "int day = 3;\nswitch (day) {\n    case 1:\n        std::cout << \"Monday\";\n        break;\n    case 2:\n        std::cout << \"Tuesday\";\n        break;\n    case 3:\n        std::cout << \"Wednesday\";\n        break;\n    default:\n        std::cout << \"Invalid day\";\n}",
+        "remcont": "🔴 Isme, day variable ki value 3 hai. switch statement day variable ki value check karta hai, aur uske according case execute hota hai. Agar koi bhi case match nahi hota, toh default case execute hota hai.\n\nIska output hoga Wednesday.\n\n🔴 Ye tha C++ me switch statement ka ek basic example."
     },
     {
         "id": "19",
         "name": "Exception Handling",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me exception handling errors ya unexpected events ko handle karne ke liye use kiya jata hai. Yahan ek example diya gaya hai:",
+        "example": "try {\n    int x = -5;\n    if (x < 0) {\n        throw \"Number is negative\";\n    }\n} catch (const char* msg) {\n    std::cerr << msg;\n}",
+        "remcont": "🔴 Isme, try block me code likha jata hai jo potential error throw kar sakta hai. Agar koi error hota hai, toh throw statement use hoti hai error throw karne ke liye.\n\n🔴 catch block me wo code likha jata hai jo error ko handle karta hai. Yahan, catch block error message ko print kar raha hai.\n\nYe tha C++ me exception handling ka ek basic example."
     },
     {
         "id": "20",
         "name": "try catch",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me try aur catch blocks exception handling ke liye use kiye jate hain. Yahan ek example diya gaya hai:",
+        "example": "try {\n    int x = -5;\n    if (x < 0) {\n        throw \"Number is negative\";\n    }\n} catch (const char* msg) {\n    std::cerr << msg;\n}",
+        "remcont": "🔴 Isme, try block me code likha jata hai jo potential error throw kar sakta hai. Agar koi error hota hai, toh throw statement use hoti hai error throw karne ke liye.\n\n🔴 catch block me wo code likha jata hai jo error ko handle karta hai. Yahan, catch block error message ko print kar raha hai.\n\nYe tha C++ me try aur catch blocks ka ek basic example."
     },
     {
         "id": "21",
         "name": "goto statement",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me goto statement ek tarah ka control flow statement hai jo program control ko directly kisi aur statement par transfer kar deta hai. Yahan ek example diya gaya hai:",
+        "example": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int num = 0;\n\nlabel:\n    num++;\n    cout << num << \"\\n\";\n\n    if (num < 5) {\n        goto label;\n    }\n\n    return 0;\n}\n",
+        "remcont": "🔴 Isme, label: ek label hai jahan goto statement se jump kiya ja sakta hai. goto label; line se control directly label: line par chala jata hai. Isliye, ye code 1 se 5 tak ke numbers print karega.\n\n🔴 Lekin dhyan dein ki goto statement ka use generally avoid kiya jata hai kyonki ye code ko padhna aur samajhna mushkil bana deta hai. Iski jagah loops (for, while, do while) ya functions ka use karna behtar hota hai.\n\nYe tha C++ me goto statement ka ek basic example."
     },
     {
         "id": "22",
         "name": "Array in c++",
-        "message": ""
+        "message": "🔴 C++ me array ek collection hota hai jisme same type ke multiple values store ki ja sakti hain. Yahan ek example diya gaya hai:",
+        "example": "int myArray[5] = {1, 2, 3, 4, 5};\n\nint firstElement = myArray[0]; // 1\nint secondElement = myArray[1]; // 2",
+        "remcont": "🔴 Isme, myArray ek integer array hai jisme 5 elements hain. Array ki values ko square brackets [] ke andar likha jata hai.\n\n🔴 Array ke specific element ko access karne ke liye, uska index number use kiya jata hai. Dhyan dein ki array indexing 0 se start hoti hai. Yani ki pehla element 0 index par hota hai, dusra element 1 index par hota hai, aur aise hi aage badhta hai."
     },
     {
         "id": "23",
         "name": "Array Traversing",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me array traversing ka matlab hai ki array ke har element ko ek ek karke access karna. Iske liye hum loop ka use kar sakte hain. Yahan ek example diya gaya hai:",
+        "example": "int myArray[5] = {1, 2, 3, 4, 5};\nfor (int i = 0; i < 5; i++) {\n    std::cout << myArray[i] << \"\\n\";\n}",
+        "remcont": "🔴 Isme, for loop i ki value 0 se 4 tak chalta hai, aur har iteration me array ka ith element print hota hai. Iska output hoga 1, 2, 3, 4, 5 ek ek karke new line par.\n\nYe tha C++ me array traversing ka ek basic example."
     },
     {
         "id": "24",
         "name": "Multidimensional Array",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me multidimensional array ek array hota hai jisme aur arrays hote hain. Yahan ek example diya gaya hai:",
+        "example": "int myArray[2][3] = { {1, 2, 3}, {4, 5, 6} };\n\n\nint firstElement = myArray[0][0]; // 1\nint secondElement = myArray[0][1]; // 2",
+        "remcont": "🔴 Isme, myArray ek 2D array hai jisme 2 rows aur 3 columns hain. Har row me ek 1D array hai jisme 3 elements hain.\n\n🔴 Multidimensional array ke specific element ko access karne ke liye, uske row index aur column index ka use kiya jata hai."
     },
     {
         "id": "25",
         "name": "Structure in c++",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me structure ek tarah ka user-defined data type hota hai jisme hum different types ke variables ko ek sath store kar sakte hain. Yeh kuch is tarah se define kiya jata hai:\n\nstruct Student {\n    string name;\n    int roll_no;\n    float marks;\n};\n\n🔴 Yaha Student naam ka ek structure banaya gaya hai jisme teen members hain: name (string type), roll_no (integer type), aur marks (float type).\n\n🔴 Ab hum is structure ka use karke ek variable create kar sakte hain:\nStudent s1;\n\n🔴 Ab hum s1 ke members ko access kar sakte hain dot operator (.) ka use karke:\ns1.name = \"Abhivishrut Bishnoi\";\ns1.roll_no = 101;\ns1.marks = 89.5;\n\n🔴 Ab s1 ke saare members me values assign ho chuki hain. Hum inhe print bhi kar sakte hain:\ncout << \"Name: \" << s1.name << endl; cout << \"Roll No: \" << s1.roll_no << endl; cout << \"Marks: \" << s1.marks << endl;",
+        "example": "0",
+        "remcont": "I hope yeh example aapko samajh me aayi hogi."
     },
     {
         "id": "26",
         "name": "Reference Variable",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me reference variable ek tarah ka “alias” ya “nickname” hota hai jo kisi dusre variable ko refer karta hai. Yeh kuch is tarah se define kiya jata hai:\n\nint x = 10;\nint& ref = x;\n\n🔴 Yaha x naam ka ek integer variable hai aur ref uska reference variable. ref ka use karke hum x ki value ko access ya modify kar sakte hain.",
+        "example": "cout << \"x: \" << x << endl; // Output: x: 10\ncout << \"ref: \" << ref << endl; // Output: ref: 10\n\nref = 20; // x ki value change kar rahe hain ref ke through\n\ncout << \"x: \" << x << endl; // Output: x: 20\ncout << \"ref: \" << ref << endl; // Output: ref: 20",
+        "remcont": "🔴 Dhyan dijiye ki jab hum ref ki value change karte hain to x ki value bhi change ho jati hai. Iska matlab ref sirf x ka reference hai, yeh x ka copy nahi hai.\n\nI hope yeh example aapko samajh me aayi hogi."
     },
     {
         "id": "27",
         "name": "Pointers in c++",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me pointer ek special type ka variable hota hai jo kisi dusre variable ka address store karta hai. Yeh kuch is tarah se define kiya jata hai:\nint x = 10;\nint* ptr = &x;\n\n🔴 Yaha x naam ka ek integer variable hai aur ptr uska pointer. ptr ka use karke hum x ki value ko access ya modify kar sakte hain.",
+        "example": "cout << \"Value of x: \" << x << endl;\ncout << \"Address of x: \" << &x << endl;\ncout << \"Value of ptr: \" << ptr << endl;\ncout << \"Value of x using ptr: \" << *ptr << endl;",
+        "remcont": "🔴 Dhyan dijiye ki jab hum *ptr ka use karte hain to hum x ki value ko access kar rahe hain. Isko dereferencing kehte hain."
     },
     {
         "id": "28",
         "name": "Function in c++",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me function ek reusable code block hota hai jo kuch specific task ko perform karta hai. Yeh kuch is tarah se define kiya jata hai:\n\n🔴 Yaha greet naam ka ek function banaya gaya hai jo ek string parameter leta hai aur “Hello, [name]!” print karta hai. void iska return type hai jo iska matlab hai ki yeh function kuch return nahi karta.",
+        "example": "void greet(string name) {\n    cout << \"Hello, \" << name << \"!\" << endl;\n}\n\nint main() {\n    greet(\"World\");\n    return 0;\n}\n\n\n//Ab hum is function ko call kar sakte hain:\nint main() {\n    greet(\"Abhivishrut Bishnoi\"); // Function call with argument\n    return 0;\n}",
+        "remcont": "🔴 Yeh program “Hello, Abhivishrut Bishnoi!” print karega.\n\nI hope yeh example aapko samajh me aayi hogi."
     },
     {
         "id": "29",
         "name": "Parameterized Function",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me parameterized function ek aisa function hota hai jo ek ya ek se zyada parameters leta hai. Yeh kuch is tarah se define kiya jata hai:\n\n🔴 Yaha add naam ka ek function banaya gaya hai jo do integer parameters leta hai (a aur b) aur unka sum return karta hai.",
+        "example": "int add(int a, int b) {\n    return a + b;\n}\n\n\n//Ab hum is function ko call kar sakte hain:\nint main() {\n    int sum = add(10, 20); // Function call with arguments\n    cout << \"Sum: \" << sum << endl; // Output: Sum: 30\n    return 0;\n}",
+        "remcont": "🔴 Yeh program “Sum: 30” print karega.\n\nI hope yeh example aapko samajh me aayi hogi."
     },
     {
         "id": "30",
         "name": "Recursive Function",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me recursive function ek aisa function hota hai jo khud ko hi call karta hai. Yeh kuch is tarah se define kiya jata hai:\n\n🔴 Yaha factorial naam ka ek function banaya gaya hai jo ek integer parameter leta hai (n) aur uska factorial calculate karta hai. Agar n zero hai to yeh 1 return karta hai, warna yeh n multiply karta hai factorial(n - 1) se. Yaha factorial(n - 1) is function ka recursive call hai.",
+        "example": "int factorial(int n) {\n    if (n == 0)\n        return 1;\n    else\n        return n * factorial(n - 1);\n}\n\n\nAb hum is function ko call kar sakte hain:\nint main() {\n    int result = factorial(5); // Function call with argument\n    cout << \"Factorial: \" << result << endl; // Output: Factorial: 120\n    return 0;\n}",
+        "remcont": "🔴 Yeh program “Factorial: 120” print karega.\n\nI hope yeh example aapko samajh me aayi hogi."
     },
     {
         "id": "31",
         "name": "Function Call By Value And Call By Reference",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me function call by value aur call by reference do tarah se kiya jata hai.\n\n📌~Call by Value: Isme function ko variable ki copy pass ki jati hai. Iska matlab hai ki function ke andar jo changes hote hain wo original variable ko affect nahi karte.\n\n~In Example: Yaha increment function x ki copy le raha hai aur usme 1 add kar raha hai. Lekin yeh change main function ke x variable ko affect nahi karta.\n\n📌~Call by Reference: Isme function ko variable ka reference pass kiya jata hai. Iska matlab hai ki function ke andar jo changes hote hain wo original variable ko bhi affect karte hain.\n\n~In Example: Yaha increment function x ka reference le raha hai aur usme 1 add kar raha hai. Yeh change main function ke x variable ko bhi affect karta hai.",
+        "example": "//Call by Value\n#include <iostream>\nusing namespace std;\n\nvoid increment(int a) {\n    a = a + 1;\n}\n\nint main() {\n    int x = 5;\n    increment(x);\n    cout << x << endl; // Output: 5\n    return 0;\n}\n\n\n//Call by Reference\nvoid increment(int& a) {\n    a = a + 1;\n}\n\nint main() {\n    int x = 5;\n    increment(x);\n    cout << x << endl; // Output: 6\n    return 0;\n}",
+        "remcont": "I hope yeh example aapko samajh me aayi hogi."
     },
     {
         "id": "32",
         "name": "OOPs Concepts Introduction",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Object-Oriented Programming (OOPs) ek programming paradigm hai jo objects aur classes ke concepts par based hai. OOPs ke main concepts hain: Class, Object, Inheritance, Polymorphism, Abstraction, aur Encapsulation.\n\n📌~Class: Class ek blueprint ya template hota hai jisme methods aur variables define kiye jate hain.\n\n📌~Object: Class ke instance ko object kehte hain. Object class ke variables aur methods ka use kar sakta hai.\n\n📌~Inheritance: Inheritance ek process hai jisme ek class dusri class ke properties (methods aur variables) ko inherit kar sakti hai. Isse code reuseability badhti hai.\n\n📌~Polymorphism: Polymorphism ek concept hai jisme ek function ya operator different ways me behave kar sakta hai, depend karta hai ki wo kaise use kiya jaa raha hai.\n\n📌~Abstraction: Abstraction ka matlab hai ki complex systems ko simple sub-parts me break karna. Isse user ko sirf necessary details dikhai deti hain aur background details hide ho jati hain.\n\n📌~Encapsulation: Encapsulation ek process hai jisme data members aur member functions ko ek single unit me wrap kiya jata hai, jise class kehte hain. Isse data secure hota hai.",
+        "example": "0",
+        "remcont": "I hope yeh introduction aapko samajh me aayi hogi."
     },
     {
         "id": "33",
         "name": "Class And Object",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Class aur Object ka concept bahut important hai.\n\n📌~Class: Class ek blueprint ya template hota hai jisme methods aur variables define kiye jate hain. Yeh kuch is tarah se define kiya jata hai:\n\n📌~Object: Class ke instance ko object kehte hain. Object class ke variables aur methods ka use kar sakta hai.",
+        "example": "//Class\nclass Car {\npublic:\n    string brand;\n    string model;\n    int year;\n};\n\n\n//Object\nCar car1;\ncar1.brand = \"Toyota\";\ncar1.model = \"Corolla\";\ncar1.year = 2020;",
+        "remcont": "~Class Example: Yaha Car naam ka ek class banaya gaya hai jisme teen public variables hain: brand, model, aur year.\n\n~Object Example: Yaha car1 naam ka ek Car class ka object banaya gaya hai aur usme values assign ki gayi hain."
     },
     {
         "id": "34",
         "name": "Static Members",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me static members ek special type ke members hote hain jo class level par share kiye jate hain, na ki object level par. Iska matlab hai ki ek class ke sabhi objects ke liye static member sirf ek hi hota hai.\n\n🔴 Static members ko static keyword ka use karke define kiya jata hai. Yeh kuch is tarah se define kiya jata hai:",
+        "example": "class MyClass {\npublic:\n    static int count;\n};\n\nint MyClass::count = 0; // Static member ko initialize karna zaruri hota hai\n\n\nMyClass obj1, obj2;\nobj1.count = 5;\ncout << obj2.count << endl; // Output: 5\ncout << MyClass::count << endl; // Output: 5",
+        "remcont": "🔴 Yaha MyClass naam ka ek class banaya gaya hai jisme ek static integer member hai count.\n\n🔴 Dhyan dijiye ki jab hum obj1.count ki value change karte hain to obj2.count aur MyClass::count ki value bhi change ho jati hai. Iska matlab count sirf ek hi hai jo sabhi objects ke sath share kiya jata hai."
     },
     {
         "id": "35",
         "name": "Non-Static Members",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me non-static members wo members hote hain jo har object ke liye alag hote hain. Yeh kuch is tarah se define kiye jate hain:\n\n🔴 Yaha Car naam ka ek class banaya gaya hai jisme teen non-static members hain: brand, model, aur year.",
+        "example": "class Car {\npublic:\n    string brand; // Non-static member\n    string model; // Non-static member\n    int year;     // Non-static member\n};\n\n\n//Ab hum is class ke objects bana sakte hain:\nCar car1, car2;\ncar1.brand = \"Toyota\";\ncar1.model = \"Corolla\";\ncar1.year = 2020;\n\ncar2.brand = \"Honda\";\ncar2.model = \"Civic\";\ncar2.year = 2022;",
+        "remcont": "🔴 Yaha car1 aur car2 naam ke do Car class ke objects banaye gaye hain aur unme alag-alag values assign ki gayi hain.\n\n🔴 Dhyan dijiye ki car1 aur car2 ke members (brand, model, year) alag-alag hain. Iska matlab brand, model, aur year non-static members hain."
     },
     {
         "id": "36",
         "name": "Constructor And Destructor",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Constructor aur Destructor special type ke functions hote hain jo class ke objects ke creation aur destruction ke time automatically call hote hain.\n\n📌~Constructor: Constructor ek special type ka member function hota hai jo same name rakhta hai jaisa ki class ka name hota hai. Constructor automatically call hota hai jab koi object class ka banaya jata hai. Iska main use hota hai object ko initial state me set karne ke liye.\n\n📌~Destructor: Destructor bhi ek special type ka member function hota hai jo same name rakhta hai jaisa ki class ka name hota hai lekin uske samne tilde (~) sign hota hai. Destructor automatically call hota hai jab object out of scope ho jata hai ya delete kiya jata hai. Iska main use hota hai resources ko free karne ke liye.",
+        "example": "//Constructor\nclass Car {\npublic:\n    Car() {\n        cout << \"Car object has been created\" << endl;\n    }\n};\n\n//Destructor\nclass Car {\npublic:\n    Car() {\n        cout << \"Car object has been created\" << endl;\n    }\n    ~Car() {\n        cout << \"Car object has been destroyed\" << endl;\n    }\n};",
+        "remcont": "~Constructor Example: Yaha Car naam ka ek class banaya gaya hai jisme ek constructor hai Car(). Jab hum Car class ka object banayenge to yeh message print hoga “Car object has been created”.\n\n~Destructor Example: Yaha Car naam ka ek class banaya gaya hai jisme ek destructor hai ~Car(). Jab Car class ka object destroy hoga to yeh message print hoga “Car object has been destroyed”."
     },
     {
         "id": "37",
         "name": "Access Specifiers",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Access Specifiers wo keywords hote hain jo ye specify karte hain ki class ke members ka scope kya hoga. C++ me teen types ke access specifiers hote hain: public, private, aur protected.\n\n📌~Public: Jab koi member public hota hai to usko class ke bahar se directly access kiya ja sakta hai.\n\n📌~Private: Jab koi member private hota hai to usko sirf class ke andar hi access kiya ja sakta hai.\n\n📌~Protected: Jab koi member protected hota hai to usko class ke andar aur uski derived classes me hi access kiya ja sakta hai.",
+        "example": "//Public\nclass MyClass {\npublic:\n    int x; // Public member\n};\n\n\n//Private\nclass MyClass {\nprivate:\n    int y; // Private member\n};\n\n\n//Protected\nclass Parent {\nprotected:\n    int z; // Protected member\n};",
+        "remcont": "~public Example: Yaha x ek public member hai, isliye hum isko class ke bahar se access kar sakte hain.\n\n~private Example: Yaha y ek private member hai, isliye hum isko sirf class ke andar hi access kar sakte hain.\n\n~protected Example: Yaha z ek protected member hai, isliye hum isko Parent class ke andar aur Parent class ki derived classes me hi access kar sakte hain."
     },
     {
         "id": "38",
         "name": "Encapsulation",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Encapsulation ek bahut hi important concept hai Object Oriented Programming (OOPs) ka.\n\n🔴 Encapsulation ka matlab hota hai data hiding. Iska main idea yeh hota hai ki class ke internal details ko bahar se hide kiya jata hai. Yeh karne ke liye hum class ke variables ko private ya protected access specifier se declare karte hain aur unhe access karne ke liye public methods (getters and setters) provide karte hain.\n\nYeh kuch is tarah se kiya jata hai:",
+        "example": "class Circle {\nprivate:\n    double radius;\n\npublic:\n    void setRadius(double r) {\n        if (r >= 0)\n            radius = r;\n        else\n            radius = 0;\n    }\n\n    double getRadius() {\n        return radius;\n    }\n\n    double getArea() {\n        return 3.14 * radius * radius;\n    }\n};",
+        "remcont": "🔴 Yaha Circle naam ka ek class banaya gaya hai jisme radius naam ka ek private member hai. Iske liye setRadius aur getRadius naam ke do public methods hain jo radius ko set aur get karne ke liye use hote hain. getArea method circle ka area calculate karta hai."
     },
     {
         "id": "39",
         "name": "Inheritance",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Inheritance ek bahut hi important concept hai Object Oriented Programming (OOPs) ka.\n\n🔴 Inheritance ek process hai jisme ek class (child class ya derived class kehlate hain) dusri class (parent class ya base class kehlate hain) ke properties (methods aur variables) ko inherit kar sakti hai. Isse code reuseability badhti hai aur program structure improve hota hai.\n\nYeh kuch is tarah se kiya jata hai:",
+        "example": "class Vehicle { // Base class\npublic:\n    string brand = \"Unknown\";\n    void honk() {\n        cout << \"Beep, beep!\" << endl;\n    }\n};\n\nclass Car: public Vehicle { // Derived class\npublic:\n    string model = \"Unknown\";\n};\n\n\nCar car1;\ncar1.brand = \"Toyota\";\ncar1.model = \"Corolla\";\ncar1.honk(); // Output: Beep, beep!\nstd::cout << car1.brand + \" \" + car1.model; // Output: Toyota Corolla",
+        "remcont": "🔴 Yaha Vehicle naam ka ek class banaya gaya hai jisme ek public variable brand aur ek public method honk hai. Car naam ki ek dusri class banayi gayi hai jo Vehicle class ko inherit kar rahi hai. Isliye Car class ke objects brand variable aur honk method ka use kar sakte hain."
     },
     {
         "id": "40",
         "name": "Multilevel Inheritance",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Multilevel Inheritance ek aisa concept hai jaha ek derived class dusri derived class se inherit hoti hai.\n\nYeh kuch is tarah se kiya jata hai:",
+        "example": "class Grandparent { // Base class\npublic:\n    void gpFunc() {\n        cout << \"Function of Grandparent class.\" << endl;\n    }\n};\n\nclass Parent : public Grandparent { // Derived class\npublic:\n    void pFunc() {\n        cout << \"Function of Parent class.\" << endl;\n    }\n};\n\nclass Child : public Parent { // Derived class\npublic:\n    void cFunc() {\n        cout << \"Function of Child class.\" << endl;\n    }\n};\n\n\n// Ab hum Child class ka object banakar in sabhi functions ko call kar sakte hain:\nint main() {\n    Child c;\n    c.gpFunc(); // Output: Function of Grandparent class.\n    c.pFunc(); // Output: Function of Parent class.\n    c.cFunc(); // Output: Function of Child class.\n    return 0;\n}",
+        "remcont": "🔴 Yaha Grandparent, Parent, aur Child naam ke teen classes hain. Parent class Grandparent class se inherit hoti hai aur Child class Parent class se inherit hoti hai. Isse multilevel inheritance kehte hain."
     },
     {
         "id": "41",
         "name": "Multiple Inheritance",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Multiple Inheritance ek aisa concept hai jaha ek derived class ek se zyada base classes se inherit hoti hai.\n\nYeh kuch is tarah se kiya jata hai:",
+        "example": "class Parent1 { \npublic: \n    void func1() { \n        cout << \"Function of Parent1 class.\" << endl; \n    } \n}; \n\nclass Parent2 { \npublic: \n    void func2() { \n        cout << \"Function of Parent2 class.\" << endl; \n    } \n}; \n\nclass Child : public Parent1, public Parent2 { \npublic: \n    void func3() { \n        cout << \"Function of Child class.\" << endl; \n    } \n};\n\n\n// Ab hum Child class ka object banakar in sabhi functions ko call kar sakte hain:\nint main() {\n    Child c;\n    c.func1(); // Output: Function of Parent1 class.\n    c.func2(); // Output: Function of Parent2 class.\n    c.func3(); // Output: Function of Child class.\n    return 0;\n}",
+        "remcont": "🔴 Yaha Parent1, Parent2, aur Child naam ke teen classes hain. Child class Parent1 aur Parent2 classes se inherit hoti hai. Isse multiple inheritance kehte hain."
     },
     {
         "id": "42",
         "name": "Method Overloading",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Method Overloading ek bahut hi important concept hai.\n\n🔴 Method Overloading ka matlab hota hai ki ek hi class me ek hi naam ke multiple methods hote hain lekin unke parameters alag-alag hote hain. Yeh kuch is tarah se kiya jata hai:",
+        "example": "class MyClass {\npublic:\n    void display() {\n        cout << \"Display without parameters\" << endl;\n    }\n\n    void display(int a) {\n        cout << \"Display with one parameter: \" << a << endl;\n    }\n\n    void display(int a, int b) {\n        cout << \"Display with two parameters: \" << a << \", \" << b << endl;\n    }\n};\n\n\n// Ab hum in methods ko call kar sakte hain:\nint main() {\n    MyClass obj;\n    obj.display(); // Output: Display without parameters\n    obj.display(5); // Output: Display with one parameter: 5\n    obj.display(10, 20); // Output: Display with two parameters: 10, 20\n    return 0;\n}",
+        "remcont": "🔴 Yaha MyClass naam ka ek class banaya gaya hai jisme display naam ke teen methods hain. Sabka naam same hai lekin parameters alag-alag hain."
     },
     {
         "id": "43",
         "name": "Method Overriding",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Method Overriding ek bahut hi important concept hai Object Oriented Programming (OOPs) ka, jo inheritance ke sath use hota hai.\n\n🔴 Method Overriding ka matlab hota hai ki derived class me base class ka method redefine karna. Yeh kuch is tarah se kiya jata hai:",
+        "example": "class Base { // Base class\npublic:\n    void display() {\n        cout << \"Display function of Base class\" << endl;\n    }\n};\n\nclass Derived : public Base { // Derived class\npublic:\n    // Overriding display() function of Base class\n    void display() {\n        cout << \"Display function of Derived class\" << endl;\n    }\n};\n\n\n// Ab hum in methods ko call kar sakte hain:\nint main() {\n    Base b;\n    Derived d;\n\n    b.display(); // Output: Display function of Base class\n    d.display(); // Output: Display function of Derived class\n\n    return 0;\n}",
+        "remcont": "🔴 Yaha Base aur Derived naam ke do classes hain. Derived class Base class se inherit hoti hai. Dono classes me display naam ka ek method hai. Lekin Derived class me display method Base class ke display method ko override kar raha hai."
     },
     {
         "id": "44",
         "name": "Polymorphism",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Polymorphism ek bahut hi important concept hai Object Oriented Programming (OOPs) ka.\n\n🔴 Polymorphism ka matlab hota hai “many forms”. Iska matlab hai ki ek hi interface ya entity ka multiple forms ho sakte hain. C++ me mainly do types ke polymorphism hote hain: Compile time Polymorphism (jaise Method Overloading aur Operator Overloading) aur Runtime Polymorphism (jaise Method Overriding through Virtual Functions).\n\n📌~Method Overloading: Ek hi class me ek hi naam ke multiple methods hote hain lekin unke parameters alag-alag hote hain.\n\n📌~Method Overriding through Virtual Functions: Jab base class ka method virtual declared hota hai to derived class us method ko override kar sakti hai.",
+        "example": "//Method Overloading\nclass MyClass {\npublic:\n    void display() {\n        cout << \"Display without parameters\" << endl;\n    }\n\n    void display(int a) {\n        cout << \"Display with one parameter: \" << a << endl;\n    }\n\n    void display(int a, int b) {\n        cout << \"Display with two parameters: \" << a << \", \" << b << endl;\n    }\n};\n\n\n//Method Overriding through Virtual Functions\nclass Base { // Base class\npublic:\n    virtual void display() {\n        cout << \"Display function of Base class\" << endl;\n    }\n};\n\nclass Derived : public Base { // Derived class\npublic:\n    // Overriding display() function of Base class\n    void display() override {\n        cout << \"Display function of Derived class\" << endl;\n    }\n};",
+        "remcont": "I hope yeh explanation aapko samajh me aayi hogi."
     },
     {
         "id": "45",
         "name": "Friend Function",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Friend Function ek special type ka function hota hai jo ek class ke private aur protected members ko access kar sakta hai.\n\n🔴 Friend function ko friend keyword ka use karke declare kiya jata hai. Yeh kuch is tarah se kiya jata hai:",
+        "example": "class MyClass {\nprivate:\n    int secret = 42;\n\npublic:\n    friend void revealSecret(MyClass mc);\n};\n\nvoid revealSecret(MyClass mc) {\n    cout << \"The secret is: \" << mc.secret << endl;\n}\n\n\n//Ab hum revealSecret function ko call kar sakte hain:\nint main() {\n    MyClass obj;\n    revealSecret(obj); // Output: The secret is: 42\n    return 0;\n}",
+        "remcont": "🔴 Yaha MyClass naam ka ek class banaya gaya hai jisme secret naam ka ek private member hai. revealSecret naam ka ek friend function hai jo MyClass ke secret member ko access kar sakta hai.\n\n🔴 Dhyan dijiye ki friend function class ke member nahi hota, isliye isko call karne ke liye object ki zarurat nahi hoti. Lekin yeh class ke private aur protected members ko access kar sakta hai."
     },
     {
         "id": "46",
         "name": "Virtual Function",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Virtual Function ek special type ka member function hota hai jo base class me declare kiya jata hai aur derived class me override kiya jata hai.\n\n🔴 Virtual function ka main use hota hai runtime polymorphism enable karne ke liye. Yeh kuch is tarah se kiya jata hai:",
+        "example": "class Base { // Base class\npublic:\n    virtual void display() {\n        cout << \"Display function of Base class\" << endl;\n    }\n};\n\nclass Derived : public Base { // Derived class\npublic:\n    // Overriding display() function of Base class\n    void display() override {\n        cout << \"Display function of Derived class\" << endl;\n    }\n};\n\n\n// Ab hum in methods ko call kar sakte hain:\nint main() {\n    Base* ptr;\n    Derived d;\n\n    ptr = &d;\n    ptr->display(); // Output: Display function of Derived class\n\n    return 0;\n}",
+        "remcont": "🔴 Yaha Base aur Derived naam ke do classes hain. Derived class Base class se inherit hoti hai. Dono classes me display naam ka ek method hai. Lekin Derived class me display method Base class ke display method ko override kar raha hai.\n\n🔴 Dhyan dijiye ki yaha humne Base class ka pointer ptr use kiya hai Derived class ke object d ko point karne ke liye. Jab hum ptr->display() call karte hain to Derived class ka display method call hota hai, na ki Base class ka. Yeh hota hai runtime polymorphism."
     },
     {
         "id": "47",
         "name": "Virtual Destructor",
-        "message": "",
-        "example": "",
-        "remcont": ""
+        "message": "🔴 C++ me Virtual Destructor ek special type ka destructor hota hai jo base class me declare kiya jata hai.\n\n🔴 Virtual destructor ka main use hota hai runtime polymorphism enable karne ke liye, jisse jab derived class ka object delete hota hai to pehle derived class ka destructor call hota hai fir base class ka destructor call hota hai. Yeh kuch is tarah se kiya jata hai:",
+        "example": "class Base { // Base class\npublic:\n    Base() {\n        cout << \"Base class constructor\" << endl;\n    }\n    virtual ~Base() {\n        cout << \"Base class destructor\" << endl;\n    }\n};\n\nclass Derived : public Base { // Derived class\npublic:\n    Derived() {\n        cout << \"Derived class constructor\" << endl;\n    }\n    ~Derived() {\n        cout << \"Derived class destructor\" << endl;\n    }\n};\n\n\nAb hum in classes ke objects ko create aur delete karke dekh sakte hain:\nint main() {\n    Base* ptr = new Derived();\n    delete ptr;\n    return 0;\n}\n\n\n// Yeh program yeh output dega:\nBase class constructor\nDerived class constructor\nDerived class destructor\nBase class destructor",
+        "remcont": "🔴 Yaha Base aur Derived naam ke do classes hain. Derived class Base class se inherit hoti hai. Dono classes me constructors aur destructors hain. Lekin Base class ka destructor virtual hai.\n\n🔴 Dhyan dijiye ki jab hum delete ptr karte hain to pehle Derived class ka destructor call hota hai fir Base class ka destructor call hota hai. Yeh hota hai runtime polymorphism."
     }
 ]
