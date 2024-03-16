@@ -242,7 +242,7 @@
     {
         "id": "31",
         "name": "Function Call By Value And Call By Reference",
-        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/ConstantImages/function_call_by_value_and_call_by_reference.png",
+        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/ConstantImages/function_call_by_value_and_call_by_refernce.png",
         "message": "🔴 C++ me function call by value aur call by reference do tarah se kiya jata hai.\n\n📌~Call by Value: Isme function ko variable ki copy pass ki jati hai. Iska matlab hai ki function ke andar jo changes hote hain wo original variable ko affect nahi karte.\n\n~In Example: Yaha increment function x ki copy le raha hai aur usme 1 add kar raha hai. Lekin yeh change main function ke x variable ko affect nahi karta.\n\n📌~Call by Reference: Isme function ko variable ka reference pass kiya jata hai. Iska matlab hai ki function ke andar jo changes hote hain wo original variable ko bhi affect karte hain.\n\n~In Example: Yaha increment function x ka reference le raha hai aur usme 1 add kar raha hai. Yeh change main function ke x variable ko bhi affect karta hai.",
         "example": "//Call by Value\n#include <iostream>\nusing namespace std;\n\nvoid increment(int a) {\n    a = a + 1;\n}\n\nint main() {\n    int x = 5;\n    increment(x);\n    cout << x << endl; // Output: 5\n    return 0;\n}\n\n\n//Call by Reference\nvoid increment(int& a) {\n    a = a + 1;\n}\n\nint main() {\n    int x = 5;\n    increment(x);\n    cout << x << endl; // Output: 6\n    return 0;\n}",
         "remcont": "I hope yeh example aapko samajh me aayi hogi."
@@ -266,7 +266,7 @@
     {
         "id": "34",
         "name": "Static Members",
-        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/ConstantImages/static_member.png",
+        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/ConstantImages/static_members.png",
         "message": "🔴 C++ me static members ek special type ke members hote hain jo class level par share kiye jate hain, na ki object level par. Iska matlab hai ki ek class ke sabhi objects ke liye static member sirf ek hi hota hai.\n\n🔴 Static members ko static keyword ka use karke define kiya jata hai. Yeh kuch is tarah se define kiya jata hai:",
         "example": "class MyClass {\npublic:\n    static int count;\n};\n\nint MyClass::count = 0; // Static member ko initialize karna zaruri hota hai\n\n\nMyClass obj1, obj2;\nobj1.count = 5;\ncout << obj2.count << endl; // Output: 5\ncout << MyClass::count << endl; // Output: 5",
         "remcont": "🔴 Yaha MyClass naam ka ek class banaya gaya hai jisme ek static integer member hai count.\n\n🔴 Dhyan dijiye ki jab hum obj1.count ki value change karte hain to obj2.count aur MyClass::count ki value bhi change ho jati hai. Iska matlab count sirf ek hi hai jo sabhi objects ke sath share kiya jata hai."
@@ -274,7 +274,7 @@
     {
         "id": "35",
         "name": "Non-Static Members",
-        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/ConstantImages/non_static_member.png",
+        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/ConstantImages/non_static_members.png",
         "message": "🔴 C++ me non-static members wo members hote hain jo har object ke liye alag hote hain. Yeh kuch is tarah se define kiye jate hain:\n\n🔴 Yaha Car naam ka ek class banaya gaya hai jisme teen non-static members hain: brand, model, aur year.",
         "example": "class Car {\npublic:\n    string brand; // Non-static member\n    string model; // Non-static member\n    int year;     // Non-static member\n};\n\n\n//Ab hum is class ke objects bana sakte hain:\nCar car1, car2;\ncar1.brand = \"Toyota\";\ncar1.model = \"Corolla\";\ncar1.year = 2020;\n\ncar2.brand = \"Honda\";\ncar2.model = \"Civic\";\ncar2.year = 2022;",
         "remcont": "🔴 Yaha car1 aur car2 naam ke do Car class ke objects banaye gaye hain aur unme alag-alag values assign ki gayi hain.\n\n🔴 Dhyan dijiye ki car1 aur car2 ke members (brand, model, year) alag-alag hain. Iska matlab brand, model, aur year non-static members hain."
@@ -338,7 +338,7 @@
     {
         "id": "43",
         "name": "Method Overriding",
-        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/ConstantImages/method_overriding.png",
+        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/ConstantImages/method_overring.png",
         "message": "🔴 C++ me Method Overriding ek bahut hi important concept hai Object Oriented Programming (OOPs) ka, jo inheritance ke sath use hota hai.\n\n🔴 Method Overriding ka matlab hota hai ki derived class me base class ka method redefine karna. Yeh kuch is tarah se kiya jata hai:",
         "example": "class Base { // Base class\npublic:\n    void display() {\n        cout << \"Display function of Base class\" << endl;\n    }\n};\n\nclass Derived : public Base { // Derived class\npublic:\n    // Overriding display() function of Base class\n    void display() {\n        cout << \"Display function of Derived class\" << endl;\n    }\n};\n\n\n// Ab hum in methods ko call kar sakte hain:\nint main() {\n    Base b;\n    Derived d;\n\n    b.display(); // Output: Display function of Base class\n    d.display(); // Output: Display function of Derived class\n\n    return 0;\n}",
         "remcont": "🔴 Yaha Base aur Derived naam ke do classes hain. Derived class Base class se inherit hoti hai. Dono classes me display naam ka ek method hai. Lekin Derived class me display method Base class ke display method ko override kar raha hai."
