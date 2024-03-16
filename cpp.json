@@ -74,7 +74,7 @@
     {
         "id": "10",
         "name": "String",
-        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/ConstantImages/string.png",
+        "img": "https://raw.githubusercontent.com/abhivishrut/APIs/main/Images/ConstantImages/strings.png",
         "message": "🔴 C++ me strings ko std::string class ka use karke declare kiya jata hai. Yahan kuch examples diye gaye hain:\n\n📌~String Declare Karein: Sabse pehle, aapko ek string variable declare karna hoga.\n\n📌~String Concatenate Karein: Do strings ko jodne (concatenate) ke liye, aap + operator ka use kar sakte hain.\n\n📌~String Length Nikalein: String ki length nikalne ke liye, aap length() function ka use kar sakte hain.\n\n📌~String Access Karein: String ke specific character ko access karne ke liye, aap square brackets [] ka use kar sakte hain.",
         "example": "//String Declare Karein\nstd::string myVar = \"Hello, World!\";\n\n//String Concatenate Karein\nstd::string str1 = \"Hello, \";\nstd::string str2 = \"World!\";\nstd::string str3 = str1 + str2; // \"Hello, World!\"\n\n//String Length Nikalein\nstd::string myVar = \"Hello, World!\";\nint len = myVar.length(); // 13\n\n//String Access Karein\nstd::string myVar = \"Hello, World!\";\nchar ch = myVar[0]; // 'H'",
         "remcont": "0"
