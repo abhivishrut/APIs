@@ -1,0 +1,159 @@
+{
+  "famous_persons": [
+    {
+      "id": 1,
+      "full_name": "Mahatma Gandhi",
+      "dob": "1869-10-02",
+      "birth_place": {
+        "city": "Porbandar",
+        "state": "Gujarat",
+        "country": "India"
+      },
+      "death_date": "1948-01-30",
+      "net_worth": "Not applicable (lived simply)",
+      "profession": ["Freedom Fighter", "Lawyer", "Political Ethicist"],
+      "known_for": "Indian Independence Movement, Non-violence",
+      "picture_urls": [
+        "https://example.com/gandhi1.jpg",
+        "https://example.com/gandhi2.jpg"
+      ],
+      "life_story": {
+        "english": "Mohandas Karamchand Gandhi was the leader of the Indian independence movement against British rule. Employing nonviolent civil disobedience, Gandhi led India to independence and inspired movements for civil rights and freedom across the world.",
+        "hindi": "मोहनदास करमचंद गांधी ब्रिटिश शासन के खिलाफ भारतीय स्वतंत्रता आंदोलन के नेता थे। अहिंसक सविनय अवज्ञा का उपयोग करते हुए, गांधी ने भारत को स्वतंत्रता दिलाई और दुनिया भर में नागरिक अधिकारों और स्वतंत्रता के लिए आंदोलनों को प्रेरित किया।"
+      },
+      "quotes": [
+        {
+          "english": "Be the change you wish to see in the world.",
+          "hindi": "वह बदलाव बनिए जो आप दुनिया में देखना चाहते हैं।"
+        },
+        {
+          "english": "An eye for an eye will only make the whole world blind.",
+          "hindi": "आँख के बदले आँख पूरी दुनिया को अँधा बना देगी।"
+        }
+      ],
+      "achievements": [
+        "Led India to independence",
+        "Champion of non-violence",
+        "Inspired civil rights movements worldwide"
+      ],
+      "spouse": "Kasturba Gandhi",
+      "children": ["Harilal Gandhi", "Manilal Gandhi", "Ramdas Gandhi", "Devdas Gandhi"],
+      "education": [
+        {
+          "institution": "University College London",
+          "degree": "Law"
+        }
+      ],
+      "awards": ["Time Person of the Year (1930)"]
+    },
+    {
+      "id": 2,
+      "full_name": "A.P.J. Abdul Kalam",
+      "dob": "1931-10-15",
+      "birth_place": {
+        "city": "Rameswaram",
+        "state": "Tamil Nadu",
+        "country": "India"
+      },
+      "death_date": "2015-07-27",
+      "net_worth": "$1 million (estimated)",
+      "profession": ["Scientist", "Aerospace Engineer", "President of India"],
+      "known_for": "Missile Man of India, 11th President of India",
+      "picture_urls": [
+        "https://example.com/kalam1.jpg",
+        "https://example.com/kalam2.jpg"
+      ],
+      "life_story": {
+        "english": "Avul Pakir Jainulabdeen Abdul Kalam was an Indian aerospace scientist and politician who served as the 11th President of India. He played a pivotal role in India's Pokhran-II nuclear tests in 1998 and was known as the Missile Man of India for his work on ballistic missile technology.",
+        "hindi": "अवुल पकिर जैनुलाब्दीन अब्दुल कलाम एक भारतीय अंतरिक्ष वैज्ञानिक और राजनीतिज्ञ थे जिन्होंने भारत के 11वें राष्ट्रपति के रूप में कार्य किया। उन्होंने 1998 में भारत के पोखरण-द्वितीय परमाणु परीक्षणों में महत्वपूर्ण भूमिका निभाई और बैलिस्टिक मिसाइल प्रौद्योगिकी पर अपने काम के लिए उन्हें भारत का मिसाइल मैन कहा जाता था।"
+      },
+      "quotes": [
+        {
+          "english": "Dream, dream, dream. Dreams transform into thoughts and thoughts result in action.",
+          "hindi": "सपने देखो, सपने देखो, सपने देखो। सपने विचारों में बदल जाते हैं और विचार कार्य का परिणाम देते हैं।"
+        },
+        {
+          "english": "If you want to shine like a sun, first burn like a sun.",
+          "hindi": "यदि आप सूरज की तरह चमकना चाहते हैं, तो पहले सूरज की तरह जलो।"
+        }
+      ],
+      "achievements": [
+        "Key figure in development of India's missile technology",
+        "Popularly elected President of India",
+        "Authored several inspirational books"
+      ],
+      "spouse": "Never married",
+      "children": [],
+      "education": [
+        {
+          "institution": "Madras Institute of Technology",
+          "degree": "Aerospace Engineering"
+        }
+      ],
+      "awards": [
+        "Bharat Ratna (1997)",
+        "Padma Bhushan (1981)",
+        "Padma Vibhushan (1990)"
+      ]
+    },
+    {
+      "id": 3,
+      "full_name": "Ratan Tata",
+      "dob": "1937-12-28",
+      "birth_place": {
+        "city": "Surat",
+        "state": "Gujarat",
+        "country": "India"
+      },
+      "death_date": null,
+      "net_worth": "$1 billion (estimated)",
+      "profession": ["Industrialist", "Philanthropist", "Investor"],
+      "known_for": "Former Chairman of Tata Sons",
+      "picture_urls": [
+        "https://example.com/tata1.jpg",
+        "https://example.com/tata2.jpg"
+      ],
+      "life_story": {
+        "english": "Ratan Naval Tata is an Indian industrialist, philanthropist, and a former chairman of Tata Sons. He was the chairman of Tata Group, a Mumbai-based conglomerate from 1991 to 2012, and interim chairman from October 2016 through February 2017. Under his leadership, Tata Group transformed into a global business.",
+        "hindi": "रतन नवल टाटा एक भारतीय उद्योगपति, परोपकारी और टाटा संस के पूर्व अध्यक्ष हैं। वह 1991 से 2012 तक मुंबई स्थित कंग्लोमरेट टाटा समूह के अध्यक्ष थे, और अक्टूबर 2016 से फरवरी 2017 तक अंतरिम अध्यक्ष थे। उनके नेतृत्व में, टाटा समूह एक वैश्विक व्यवसाय में बदल गया।"
+      },
+      "quotes": [
+        {
+          "english": "I don't believe in taking right decisions. I take decisions and then make them right.",
+          "hindi": "मैं सही निर्णय लेने में विश्वास नहीं करता। मैं निर्णय लेता हूं और फिर उन्हें सही बनाता हूं।"
+        },
+        {
+          "english": "None can destroy iron, but its own rust can. Likewise, none can destroy a person, but his own mindset can.",
+          "hindi": "कोई भी लोहे को नष्ट नहीं कर सकता, लेकिन उसका अपना जंग कर सकता है। इसी तरह, कोई भी व्यक्ति को नष्ट नहीं कर सकता, लेकिन उसकी अपनी मानसिकता कर सकती है।"
+        }
+      ],
+      "achievements": [
+        "Expanded Tata Group globally",
+        "Launched Tata Nano - the world's cheapest car",
+        "Numerous philanthropic initiatives"
+      ],
+      "spouse": "Never married",
+      "children": [],
+      "education": [
+        {
+          "institution": "Cornell University",
+          "degree": "Architecture"
+        },
+        {
+          "institution": "Harvard Business School",
+          "degree": "Advanced Management Program"
+        }
+      ],
+      "awards": [
+        "Padma Bhushan (2000)",
+        "Padma Vibhushan (2008)",
+        "Honorary Knight Commander of the Order of the British Empire (2009)"
+      ]
+    }
+  ],
+  "meta": {
+    "total_persons": 3,
+    "last_updated": "2023-11-15",
+    "version": "1.0"
+  }
+}
